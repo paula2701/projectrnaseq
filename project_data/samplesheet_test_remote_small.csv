@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,strandedness
+WT_REP1,/Users/ivan/Desktop/CompWorkflow/projectrnaseq/project_data/SRR6357070_1.fastq.gz,/Users/ivan/Desktop/CompWorkflow/projectrnaseq/project_data/SRR6357070_2.fastq.gz,auto

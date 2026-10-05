@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/nf-core/projectrnaseq/master/nextflow_schema.json",
     "title": "nf-core/projectrnaseq pipeline parameters",
-    "description": "An inspired rnaseq pipeline to read QC, alignment and quantification for a group project of the practical course "Computational Workflows"",
+    "description": "An inspired rnaseq pipeline to read QC, alignment and quantification for a group project of the practical course Computational Workflows",
     "type": "object",
     "$defs": {
         "input_output_options": {
