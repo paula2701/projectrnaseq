@@ -1,0 +1,18 @@
+repository_type: pipeline
+
+nf_core_version: 4.1.0
+
+lint: {}
+
+template:
+  org: nf-core
+  name: projectrnaseq
+  description: An inspired rnaseq pipeline to read QC, alignment and quantification
+    for a group project of the practical course "Computational Workflows"
+  author: "Dingling Yang and Paula Par\xEDs Bayarri"
+  version: 1.0.0dev
+  force: true
+  outdir: .
+  skip_features:
+    - gpu
+  is_nfcore: true
