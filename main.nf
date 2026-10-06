@@ -54,7 +54,7 @@ workflow NFCORE_PROJECTRNASEQ {
     PROJECTRNASEQ (
         samplesheet,
         params.fasta,
-        params.gtf
+        params.gtf,
         params.multiqc_config,
         params.multiqc_logo,
         params.multiqc_methods_description,
