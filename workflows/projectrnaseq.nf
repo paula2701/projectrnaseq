@@ -7,6 +7,11 @@ include { FASTQC                 } from '../modules/nf-core/fastqc/main'
 include { MULTIQC                } from '../modules/nf-core/multiqc/main'
 include { CAT_FASTQ              } from '../modules/nf-core/cat/fastq/main'
 include { FASTP                  } from '../modules/nf-core/fastp/main'
+include { HISAT2_EXTRACTSPLICESITES } from '../modules/nf-core/hisat2/extractsplicesites/main'
+include { HISAT2_BUILD          } from '../modules/nf-core/hisat2/build/main'
+include { HISAT2_ALIGN           } from '../modules/nf-core/hisat2/align/main'
+include { SAMTOOLS_SORT          } from '../modules/nf-core/samtools/sort/main'
+include { SAMTOOLS_FLAGSTAT      } from '../modules/nf-core/samtools/flagstat/main'
 include { paramsSummaryMap       } from 'plugin/nf-schema'
 include { paramsSummaryMultiqc   } from '../subworkflows/nf-core/utils_nfcore_pipeline'
 include { softwareVersionsToYAML } from '../subworkflows/nf-core/utils_nfcore_pipeline'
@@ -22,6 +27,8 @@ workflow PROJECTRNASEQ {
 
     take:
     ch_samplesheet // channel: samplesheet read in from --input
+    fasta          // path: genome fasta
+    gtf            // path: genome annotation gtf
     multiqc_config
     multiqc_logo
     multiqc_methods_description
@@ -55,7 +62,37 @@ workflow PROJECTRNASEQ {
         false // save_merged: don't merge overlapping PE reads (not wanted for RNA-seq)
     )
     ch_multiqc_files = ch_multiqc_files.mix(FASTP.out.json.map {_meta, json -> json })
+
     def ch_trimmed_reads = FASTP.out.reads // input for step 3: alignment
+
+    //
+    //MODULE: Prepare HISAT2 reference (splice sites + index), built once
+    //
+    def ch_gtf = channel.value ([ [id:'genome'], file(gtf, checkIfExists:true) ])
+    HISAT2_EXTRACTSPLICESITES(ch_gtf)
+    def ch_splicesites = HISAT2_EXTRACTSPLICESITES.out.txt.first()
+
+    HISAT2_BUILD(
+        ch_splicesites.map { meta, ss -> [ meta, file(fasta, checkIfExists:true), file(gtf, checkIfExists:true), ss ] },
+        params.hisat2_build_memory
+    )
+    def ch_hisat2_index = HISAT2_BUILD.out.index.first()
+
+    //
+    // MODULE: Align trimmed reads with HISAT2
+    //
+    HISAT2_ALIGN(ch_trimmed_reads, ch_hisat2_index, ch_splicesites, false)
+
+    //
+    // MODULE: Sort + index BAM (needed for duplicate marking), mapping stats
+    //
+    SAMTOOLS_SORT(HISAT2_ALIGN.out.bam, [[:] , [], []], 'bai')
+    def ch_bam_bai = SAMTOOLS_SORT.out.bam.join(SAMTOOLS_SORT.out.index) //input for step 4: mark duplicates
+    SAMTOOLS_FLAGSTAT(ch_bam_bai)
+
+    ch_multiqc_files = ch_multiqc_files
+        .mix(HISAT2_ALIGN.out.summary.map { _meta, f -> f })
+        .mix(SAMTOOLS_FLAGSTAT.out.flagstat.map { _meta, f -> f })
 
     //
     // MODULE: Run FastQC
