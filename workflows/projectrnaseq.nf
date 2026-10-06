@@ -42,7 +42,7 @@ workflow PROJECTRNASEQ {
     //
     ch_samplesheet
         .branch { meta, fastqs ->
-            single  : fastqs.size() == 1 || (!meta.single_end && fasqs.size() ==2)
+            single  : fastqs.size() == 1 || (!meta.single_end && fastqs.size() ==2)
             multiple: true
         }
         .set { ch_fastq }
