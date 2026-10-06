@@ -38,6 +38,25 @@ workflow PROJECTRNASEQ {
     ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.map{ _meta, file -> file })
 
     //
+    // MODULE: Concatenate FastQ files rom the same sample if required
+    //
+    ch_samplesheet
+        .branch { meta, fastqs ->
+            single  : fastqs.size() == 1 || (!meta.single_end && fasqs.size() ==2)
+            multiple: true
+        }
+        .set { ch_fastq }
+
+    CAT_FASTQ (ch_fastq.multiple)
+    def ch_reads = CAT_FASTQ.out.reads.mix(ch_fastq.single)
+
+    //
+    // MODULE: Run FastQC
+    //
+    FASTQC(ch_reads)
+    ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.map{ _meta, file -> file})
+
+    //
     // Collate and save software versions
     //
     def topic_versions = channel.topic("versions")
