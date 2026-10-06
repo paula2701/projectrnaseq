@@ -254,6 +254,13 @@
         "trim_min_length": {
             "type": "integer",
             "default": 20
+        },
+        "hisat2_build_memory": {
+            "type": "string",
+            "default": "200.GB"
+        },
+        "gtf": {
+            "type": "string"
         }
     }
 }

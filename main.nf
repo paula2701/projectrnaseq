@@ -30,6 +30,7 @@ include { getGenomeAttribute      } from './subworkflows/local/utils_nfcore_proj
 //   This is an example of how to use getGenomeAttribute() to fetch parameters
 //   from igenomes.config using `--genome`
 params.fasta = getGenomeAttribute('fasta')
+params.gtf = getGenomeAttribute('gtf')
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,6 +53,8 @@ workflow NFCORE_PROJECTRNASEQ {
     //
     PROJECTRNASEQ (
         samplesheet,
+        params.fasta,
+        params.gtf
         params.multiqc_config,
         params.multiqc_logo,
         params.multiqc_methods_description,
