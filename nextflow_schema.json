@@ -245,5 +245,15 @@
         {
             "$ref": "#/$defs/generic_options"
         }
-    ]
+    ],
+    "properties": {
+        "trim_quality": {
+            "type": "integer",
+            "default": 20
+        },
+        "trim_min_length": {
+            "type": "integer",
+            "default": 20
+        }
+    }
 }
