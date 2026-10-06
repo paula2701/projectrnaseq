@@ -51,6 +51,18 @@ workflow PROJECTRNASEQ {
     def ch_reads = CAT_FASTQ.out.reads.mix(ch_fastq.single)
 
     //
+    // MODULE: run fastp (adapter + quality trimming)
+    //
+    FASTP(
+        ch_reads.map { meta, reads -> [ meta, reads, [] ] }, // [] = no adapter fasta -> fastp auto-detects
+        false, // discard_trimmed_pass: keep the trimmed reads (we need them for alignment)
+        false, // save_trimmed_fail: don't save reads that failed filtering
+        false // save_merged: don't merge overlapping PE reads (not wanted for RNA-seq)
+    )
+    ch_multiqc_files = ch_multiqc_files.mix(FASTP.out.json.map {_meta, json -> json })
+    def ch_trimmed_reads = FASTP.out.reads // input for step 3: alignment
+
+    //
     // MODULE: Run FastQC
     //
     FASTQC(ch_reads)
