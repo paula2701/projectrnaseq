@@ -20,6 +20,8 @@ include { paramsSummaryMap       } from 'plugin/nf-schema'
 include { paramsSummaryMultiqc   } from '../subworkflows/nf-core/utils_nfcore_pipeline'
 include { softwareVersionsToYAML } from '../subworkflows/nf-core/utils_nfcore_pipeline'
 include { methodsDescriptionText } from '../subworkflows/local/utils_nfcore_projectrnaseq_pipeline'
+include { SUBREAD_FEATURECOUNTS  } from '../modules/nf-core/subread/featurecounts/main'
+include { FEATURECOUNTS_TPM      } from '../modules/local/featurecounts_tpm/main'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -113,6 +115,25 @@ workflow PROJECTRNASEQ {
     //
     FASTQC(ch_reads)
     ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.map{ _meta, file -> file})
+
+    //
+    // MODULE: count reads per gene (featureCounts) ono the duplicate-marked BAM
+    //
+    SUBREAD_FEATURECOUNTS(
+        ch_bam_bai.map { meta, bam, _bai ->
+            // change auto to reversed, for the FeaturCount to work 
+            def strand = meta.strandedness == 'auto' ? 'reverse' : meta.strandedness
+            [ meta + [strandedness: strand], bam, file(gtf, checkIfExists:true) ]
+        }
+    )
+    ch_multiqc_files = ch_multiqc_files.mix(SUBREAD_FEATURECOUNTS.out.summary.map { _meta, f -> f })
+
+    //
+    // MODULE: merge all samples into gene * sample count + TPM tables
+    //
+    FEATURECOUNTS_TPM(
+        SUBREAD_FEATURECOUNTS.out.counts.map { _meta, f -> f }.collect() // wait for all samples, pass as one list
+    )
 
     //
     // Collate and save software versions
