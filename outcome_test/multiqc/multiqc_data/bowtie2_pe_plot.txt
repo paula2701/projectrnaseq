@@ -1,0 +1,4 @@
+Sample	PE mapped uniquely	PE multimapped	PE neither mate aligned
+RAP1_IAA_30M_REP1	38744.0	338.0	8823.0
+WT_REP1	75227.0	743.0	19622.0
+WT_REP2	38246.0	388.0	9371.0

@@ -1,0 +1,6 @@
+Sample	Total Reads	Total Passed QC	Mapped	Duplicates	Paired in Sequencing	Properly Paired	Self and mate mapped	Singletons	Mate mapped to diff chr	Diff chr (mapQ >= 5)
+RAP1_IAA_30M_REP1	100.0	100.0	100.0	0.0	100.0	100.0	100.0	0.0	0.0	0.0
+RAP1_UNINDUCED_REP1	100.0	100.0	100.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+RAP1_UNINDUCED_REP2	100.0	100.0	100.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+WT_REP1	100.0	100.0	100.0	0.0	100.0	100.0	100.0	0.0	0.0	0.0
+WT_REP2	100.0	100.0	100.0	0.0	100.0	100.0	100.0	0.0	0.0	0.0
