@@ -51,4 +51,4 @@ JSON report: RAP1_IAA_30M_REP1.fastp.json
 HTML report: RAP1_IAA_30M_REP1.fastp.html
 
 fastp --in1 RAP1_IAA_30M_REP1_R1.fastq.gz --in2 RAP1_IAA_30M_REP1_R2.fastq.gz --out1 RAP1_IAA_30M_REP1_R1.fastp.fastq.gz --out2 RAP1_IAA_30M_REP1_R2.fastp.fastq.gz --json RAP1_IAA_30M_REP1.fastp.json --html RAP1_IAA_30M_REP1.fastp.html --thread 4 --detect_adapter_for_pe --detect_adapter_for_pe --cut_tail --cut_mean_quality 20 --length_required 20 
-fastp v1.3.6, time used: 6 seconds
+fastp v1.3.6, time used: 8 seconds

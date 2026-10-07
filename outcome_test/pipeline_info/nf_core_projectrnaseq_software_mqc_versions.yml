@@ -12,9 +12,17 @@ HISAT2_BUILD:
 HISAT2_EXTRACTSPLICESITES:
   hisat2: 2.2.3
   samtools: 1.24
+SAMTOOLS_FIXMATE:
+  samtools: 1.24
 SAMTOOLS_FLAGSTAT:
   samtools: 1.24
-SAMTOOLS_SORT:
+SAMTOOLS_INDEX:
+  samtools: 1.24
+SAMTOOLS_MARKDUP:
+  samtools: 1.24
+SAMTOOLS_SORT_COORD:
+  samtools: 1.24
+SAMTOOLS_SORT_NAME:
   samtools: 1.24
 Workflow:
     nf-core/projectrnaseq: v1.0.0dev

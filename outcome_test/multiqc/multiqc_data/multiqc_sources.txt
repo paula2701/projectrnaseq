@@ -1,24 +1,24 @@
 Module	Section	Sample Name	Source
-Samtools	flagstat	RAP1_IAA_30M_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/21/RAP1_IAA_30M_REP1.flagstat
-Samtools	flagstat	RAP1_UNINDUCED_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/22/RAP1_UNINDUCED_REP1.flagstat
-Samtools	flagstat	RAP1_UNINDUCED_REP2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/24/RAP1_UNINDUCED_REP2.flagstat
-Samtools	flagstat	WT_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/25/WT_REP1.flagstat
-Samtools	flagstat	WT_REP2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/23/WT_REP2.flagstat
-Bowtie 2 / HiSAT2	all_sections	RAP1_IAA_30M_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/16/RAP1_IAA_30M_REP1.hisat2.summary.log
-Bowtie 2 / HiSAT2	all_sections	RAP1_UNINDUCED_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/17/RAP1_UNINDUCED_REP1.hisat2.summary.log
-Bowtie 2 / HiSAT2	all_sections	RAP1_UNINDUCED_REP2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/19/RAP1_UNINDUCED_REP2.hisat2.summary.log
-Bowtie 2 / HiSAT2	all_sections	WT_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/20/WT_REP1.hisat2.summary.log
-Bowtie 2 / HiSAT2	all_sections	WT_REP2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/18/WT_REP2.hisat2.summary.log
-fastp	all_sections	RAP1_IAA_30M_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/8/RAP1_IAA_30M_REP1.fastp.json
-fastp	all_sections	RAP1_UNINDUCED_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/10/RAP1_UNINDUCED_REP1.fastp.json
-fastp	all_sections	RAP1_UNINDUCED_REP2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/12/RAP1_UNINDUCED_REP2.fastp.json
-fastp	all_sections	WT_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/15/WT_REP1.fastp.json
-fastp	all_sections	WT_REP2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/3/WT_REP2.fastp.json
-FastQC	all_sections	RAP1_IAA_30M_REP1_1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/6/RAP1_IAA_30M_REP1_1_fastqc.zip
-FastQC	all_sections	RAP1_IAA_30M_REP1_2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/7/RAP1_IAA_30M_REP1_2_fastqc.zip
-FastQC	all_sections	RAP1_UNINDUCED_REP1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/9/RAP1_UNINDUCED_REP1_fastqc.zip
-FastQC	all_sections	RAP1_UNINDUCED_REP2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/11/RAP1_UNINDUCED_REP2_fastqc.zip
-FastQC	all_sections	WT_REP1_1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/13/WT_REP1_1_fastqc.zip
-FastQC	all_sections	WT_REP1_2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/14/WT_REP1_2_fastqc.zip
-FastQC	all_sections	WT_REP2_1	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/4/WT_REP2_1_fastqc.zip
-FastQC	all_sections	WT_REP2_2	/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/5/WT_REP2_2_fastqc.zip
+Samtools	flagstat	RAP1_IAA_30M_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/24/RAP1_IAA_30M_REP1.flagstat
+Samtools	flagstat	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/20/RAP1_UNINDUCED_REP1.flagstat
+Samtools	flagstat	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/23/RAP1_UNINDUCED_REP2.flagstat
+Samtools	flagstat	WT_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/25/WT_REP1.flagstat
+Samtools	flagstat	WT_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/22/WT_REP2.flagstat
+Bowtie 2 / HiSAT2	all_sections	RAP1_IAA_30M_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/19/RAP1_IAA_30M_REP1.hisat2.summary.log
+Bowtie 2 / HiSAT2	all_sections	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/5/RAP1_UNINDUCED_REP1.hisat2.summary.log
+Bowtie 2 / HiSAT2	all_sections	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/18/RAP1_UNINDUCED_REP2.hisat2.summary.log
+Bowtie 2 / HiSAT2	all_sections	WT_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/21/WT_REP1.hisat2.summary.log
+Bowtie 2 / HiSAT2	all_sections	WT_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/16/WT_REP2.hisat2.summary.log
+fastp	all_sections	RAP1_IAA_30M_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/11/RAP1_IAA_30M_REP1.fastp.json
+fastp	all_sections	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/4/RAP1_UNINDUCED_REP1.fastp.json
+fastp	all_sections	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/12/RAP1_UNINDUCED_REP2.fastp.json
+fastp	all_sections	WT_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/17/WT_REP1.fastp.json
+fastp	all_sections	WT_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/10/WT_REP2.fastp.json
+FastQC	all_sections	RAP1_IAA_30M_REP1_1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/6/RAP1_IAA_30M_REP1_1_fastqc.zip
+FastQC	all_sections	RAP1_IAA_30M_REP1_2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/7/RAP1_IAA_30M_REP1_2_fastqc.zip
+FastQC	all_sections	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/3/RAP1_UNINDUCED_REP1_fastqc.zip
+FastQC	all_sections	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/13/RAP1_UNINDUCED_REP2_fastqc.zip
+FastQC	all_sections	WT_REP1_1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/14/WT_REP1_1_fastqc.zip
+FastQC	all_sections	WT_REP1_2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/15/WT_REP1_2_fastqc.zip
+FastQC	all_sections	WT_REP2_1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/8/WT_REP2_1_fastqc.zip
+FastQC	all_sections	WT_REP2_2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/9/WT_REP2_2_fastqc.zip

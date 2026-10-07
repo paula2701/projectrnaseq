@@ -3,41 +3,41 @@
     "report_data_sources": {
         "Samtools": {
             "flagstat": {
-                "RAP1_IAA_30M_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/21/RAP1_IAA_30M_REP1.flagstat",
-                "RAP1_UNINDUCED_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/22/RAP1_UNINDUCED_REP1.flagstat",
-                "RAP1_UNINDUCED_REP2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/24/RAP1_UNINDUCED_REP2.flagstat",
-                "WT_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/25/WT_REP1.flagstat",
-                "WT_REP2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/23/WT_REP2.flagstat"
+                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/24/RAP1_IAA_30M_REP1.flagstat",
+                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/20/RAP1_UNINDUCED_REP1.flagstat",
+                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/23/RAP1_UNINDUCED_REP2.flagstat",
+                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/25/WT_REP1.flagstat",
+                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/22/WT_REP2.flagstat"
             }
         },
         "Bowtie 2 / HiSAT2": {
             "all_sections": {
-                "RAP1_IAA_30M_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/16/RAP1_IAA_30M_REP1.hisat2.summary.log",
-                "RAP1_UNINDUCED_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/17/RAP1_UNINDUCED_REP1.hisat2.summary.log",
-                "RAP1_UNINDUCED_REP2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/19/RAP1_UNINDUCED_REP2.hisat2.summary.log",
-                "WT_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/20/WT_REP1.hisat2.summary.log",
-                "WT_REP2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/18/WT_REP2.hisat2.summary.log"
+                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/19/RAP1_IAA_30M_REP1.hisat2.summary.log",
+                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/5/RAP1_UNINDUCED_REP1.hisat2.summary.log",
+                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/18/RAP1_UNINDUCED_REP2.hisat2.summary.log",
+                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/21/WT_REP1.hisat2.summary.log",
+                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/16/WT_REP2.hisat2.summary.log"
             }
         },
         "fastp": {
             "all_sections": {
-                "RAP1_IAA_30M_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/8/RAP1_IAA_30M_REP1.fastp.json",
-                "RAP1_UNINDUCED_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/10/RAP1_UNINDUCED_REP1.fastp.json",
-                "RAP1_UNINDUCED_REP2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/12/RAP1_UNINDUCED_REP2.fastp.json",
-                "WT_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/15/WT_REP1.fastp.json",
-                "WT_REP2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/3/WT_REP2.fastp.json"
+                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/11/RAP1_IAA_30M_REP1.fastp.json",
+                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/4/RAP1_UNINDUCED_REP1.fastp.json",
+                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/12/RAP1_UNINDUCED_REP2.fastp.json",
+                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/17/WT_REP1.fastp.json",
+                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/10/WT_REP2.fastp.json"
             }
         },
         "FastQC": {
             "all_sections": {
-                "RAP1_IAA_30M_REP1_1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/6/RAP1_IAA_30M_REP1_1_fastqc.zip",
-                "RAP1_IAA_30M_REP1_2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/7/RAP1_IAA_30M_REP1_2_fastqc.zip",
-                "RAP1_UNINDUCED_REP1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/9/RAP1_UNINDUCED_REP1_fastqc.zip",
-                "RAP1_UNINDUCED_REP2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/11/RAP1_UNINDUCED_REP2_fastqc.zip",
-                "WT_REP1_1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/13/WT_REP1_1_fastqc.zip",
-                "WT_REP1_2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/14/WT_REP1_2_fastqc.zip",
-                "WT_REP2_1": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/4/WT_REP2_1_fastqc.zip",
-                "WT_REP2_2": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca/5/WT_REP2_2_fastqc.zip"
+                "RAP1_IAA_30M_REP1_1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/6/RAP1_IAA_30M_REP1_1_fastqc.zip",
+                "RAP1_IAA_30M_REP1_2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/7/RAP1_IAA_30M_REP1_2_fastqc.zip",
+                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/3/RAP1_UNINDUCED_REP1_fastqc.zip",
+                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/13/RAP1_UNINDUCED_REP2_fastqc.zip",
+                "WT_REP1_1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/14/WT_REP1_1_fastqc.zip",
+                "WT_REP1_2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/15/WT_REP1_2_fastqc.zip",
+                "WT_REP2_1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/8/WT_REP2_1_fastqc.zip",
+                "WT_REP2_2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/9/WT_REP2_2_fastqc.zip"
             }
         }
     },
@@ -50,7 +50,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 9564,
                 "duplicates_failed": 0,
                 "mapped_passed": 78164,
                 "mapped_failed": 0,
@@ -85,7 +85,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 31533,
                 "duplicates_failed": 0,
                 "mapped_passed": 42086,
                 "mapped_failed": 0,
@@ -120,7 +120,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 68655,
                 "duplicates_failed": 0,
                 "mapped_passed": 84437,
                 "mapped_failed": 0,
@@ -155,7 +155,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 31074,
                 "duplicates_failed": 0,
                 "mapped_passed": 151940,
                 "mapped_failed": 0,
@@ -190,7 +190,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 9864,
                 "duplicates_failed": 0,
                 "mapped_passed": 77268,
                 "mapped_failed": 0,
@@ -754,7 +754,7 @@
             }
         }
     },
-    "report_creation_date": "2026-10-06, 17:16 UTC",
+    "report_creation_date": "2026-10-07, 11:16 UTC",
     "report_plot_data": {
         "samtools-flagstat-table": {
             "id": "samtools-flagstat-table",
@@ -1182,11 +1182,11 @@
                             "WT_REP2": 0.077268
                         },
                         "duplicates_passed": {
-                            "RAP1_IAA_30M_REP1": 0.0,
-                            "RAP1_UNINDUCED_REP1": 0.0,
-                            "RAP1_UNINDUCED_REP2": 0.0,
-                            "WT_REP1": 0.0,
-                            "WT_REP2": 0.0
+                            "RAP1_IAA_30M_REP1": 0.009564,
+                            "RAP1_UNINDUCED_REP1": 0.031533,
+                            "RAP1_UNINDUCED_REP2": 0.068655,
+                            "WT_REP1": 0.031073999999999997,
+                            "WT_REP2": 0.009864
                         },
                         "paired_in_sequencing_passed": {
                             "RAP1_IAA_30M_REP1": 0.078164,
@@ -1878,8 +1878,8 @@
                                                     "fmt": "0.1"
                                                 },
                                                 "duplicates_passed": {
-                                                    "raw": 0,
-                                                    "mod": 0.0,
+                                                    "raw": 9564,
+                                                    "mod": 0.009564,
                                                     "fmt": "0.0"
                                                 },
                                                 "mapped_passed": {
@@ -1935,8 +1935,8 @@
                                                     "fmt": "0.0"
                                                 },
                                                 "duplicates_passed": {
-                                                    "raw": 0,
-                                                    "mod": 0.0,
+                                                    "raw": 31533,
+                                                    "mod": 0.031533,
                                                     "fmt": "0.0"
                                                 },
                                                 "mapped_passed": {
@@ -1992,9 +1992,9 @@
                                                     "fmt": "0.1"
                                                 },
                                                 "duplicates_passed": {
-                                                    "raw": 0,
-                                                    "mod": 0.0,
-                                                    "fmt": "0.0"
+                                                    "raw": 68655,
+                                                    "mod": 0.068655,
+                                                    "fmt": "0.1"
                                                 },
                                                 "mapped_passed": {
                                                     "raw": 84437,
@@ -2049,8 +2049,8 @@
                                                     "fmt": "0.2"
                                                 },
                                                 "duplicates_passed": {
-                                                    "raw": 0,
-                                                    "mod": 0.0,
+                                                    "raw": 31074,
+                                                    "mod": 0.031073999999999997,
                                                     "fmt": "0.0"
                                                 },
                                                 "mapped_passed": {
@@ -2106,8 +2106,8 @@
                                                     "fmt": "0.1"
                                                 },
                                                 "duplicates_passed": {
-                                                    "raw": 0,
-                                                    "mod": 0.0,
+                                                    "raw": 9864,
+                                                    "mod": 0.009864,
                                                     "fmt": "0.0"
                                                 },
                                                 "mapped_passed": {
@@ -2737,11 +2737,11 @@
                             "WT_REP2": 100.0
                         },
                         "duplicates_passed_pct": {
-                            "RAP1_IAA_30M_REP1": 0.0,
-                            "RAP1_UNINDUCED_REP1": 0.0,
-                            "RAP1_UNINDUCED_REP2": 0.0,
-                            "WT_REP1": 0.0,
-                            "WT_REP2": 0.0
+                            "RAP1_IAA_30M_REP1": 12.235811882708152,
+                            "RAP1_UNINDUCED_REP1": 74.92515325761536,
+                            "RAP1_UNINDUCED_REP2": 81.30914172696804,
+                            "WT_REP1": 20.451494010793734,
+                            "WT_REP2": 12.76595744680851
                         },
                         "paired_in_sequencing_passed_pct": {
                             "RAP1_IAA_30M_REP1": 100.0,
@@ -3433,9 +3433,9 @@
                                                     "fmt": "100.0"
                                                 },
                                                 "duplicates_passed_pct": {
-                                                    "raw": 0.0,
-                                                    "mod": 0.0,
-                                                    "fmt": "0.0"
+                                                    "raw": 12.235811882708152,
+                                                    "mod": 12.235811882708152,
+                                                    "fmt": "12.2"
                                                 },
                                                 "mapped_passed_pct": {
                                                     "raw": 100.0,
@@ -3490,9 +3490,9 @@
                                                     "fmt": "100.0"
                                                 },
                                                 "duplicates_passed_pct": {
-                                                    "raw": 0.0,
-                                                    "mod": 0.0,
-                                                    "fmt": "0.0"
+                                                    "raw": 74.92515325761536,
+                                                    "mod": 74.92515325761536,
+                                                    "fmt": "74.9"
                                                 },
                                                 "mapped_passed_pct": {
                                                     "raw": 100.0,
@@ -3547,9 +3547,9 @@
                                                     "fmt": "100.0"
                                                 },
                                                 "duplicates_passed_pct": {
-                                                    "raw": 0.0,
-                                                    "mod": 0.0,
-                                                    "fmt": "0.0"
+                                                    "raw": 81.30914172696804,
+                                                    "mod": 81.30914172696804,
+                                                    "fmt": "81.3"
                                                 },
                                                 "mapped_passed_pct": {
                                                     "raw": 100.0,
@@ -3604,9 +3604,9 @@
                                                     "fmt": "100.0"
                                                 },
                                                 "duplicates_passed_pct": {
-                                                    "raw": 0.0,
-                                                    "mod": 0.0,
-                                                    "fmt": "0.0"
+                                                    "raw": 20.451494010793734,
+                                                    "mod": 20.451494010793734,
+                                                    "fmt": "20.5"
                                                 },
                                                 "mapped_passed_pct": {
                                                     "raw": 100.0,
@@ -3661,9 +3661,9 @@
                                                     "fmt": "100.0"
                                                 },
                                                 "duplicates_passed_pct": {
-                                                    "raw": 0.0,
-                                                    "mod": 0.0,
-                                                    "fmt": "0.0"
+                                                    "raw": 12.76595744680851,
+                                                    "mod": 12.76595744680851,
+                                                    "fmt": "12.8"
                                                 },
                                                 "mapped_passed_pct": {
                                                     "raw": 100.0,
@@ -49502,11 +49502,11 @@
     "config_subtitle": null,
     "config_title": null,
     "config_version": "1.35",
-    "config_output_dir": "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca",
+    "config_output_dir": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044",
     "config_sample_names_rename": [],
     "config_sample_names_rename_buttons": [],
     "config_analysis_dir_abs": [
-        "/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work/cd/501a1daf9ef2737bc4bad3dab3a3ca"
+        "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044"
     ],
     "report_saved_raw_data": {
         "multiqc_samtools_flagstat": {
@@ -49517,7 +49517,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 9564,
                 "duplicates_failed": 0,
                 "mapped_passed": 78164,
                 "mapped_failed": 0,
@@ -49552,7 +49552,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 31533,
                 "duplicates_failed": 0,
                 "mapped_passed": 42086,
                 "mapped_failed": 0,
@@ -49587,7 +49587,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 68655,
                 "duplicates_failed": 0,
                 "mapped_passed": 84437,
                 "mapped_failed": 0,
@@ -49622,7 +49622,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 31074,
                 "duplicates_failed": 0,
                 "mapped_passed": 151940,
                 "mapped_failed": 0,
@@ -49657,7 +49657,7 @@
                 "secondary_failed": 0,
                 "supplementary_passed": 0,
                 "supplementary_failed": 0,
-                "duplicates_passed": 0,
+                "duplicates_passed": 9864,
                 "duplicates_failed": 0,
                 "mapped_passed": 77268,
                 "mapped_failed": 0,

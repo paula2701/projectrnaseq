@@ -31,4 +31,4 @@ JSON report: RAP1_UNINDUCED_REP2.fastp.json
 HTML report: RAP1_UNINDUCED_REP2.fastp.html
 
 fastp --in1 RAP1_UNINDUCED_REP2.fastq.gz --out1 RAP1_UNINDUCED_REP2.fastp.fastq.gz --thread 4 --json RAP1_UNINDUCED_REP2.fastp.json --html RAP1_UNINDUCED_REP2.fastp.html --detect_adapter_for_pe --cut_tail --cut_mean_quality 20 --length_required 20 
-fastp v1.3.6, time used: 5 seconds
+fastp v1.3.6, time used: 3 seconds

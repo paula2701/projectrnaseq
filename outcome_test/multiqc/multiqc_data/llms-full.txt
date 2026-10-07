@@ -99,11 +99,11 @@ Diff chr (mapQ >= 5) - Mate mapped to different chromosome (mapQ >= 5)
 
 |Sample Name|Total Reads|Total Passed QC|Mapped|Duplicates|Paired in Sequencing|Properly Paired|Self and mate mapped|Singletons|Mate mapped to diff chr|Diff chr (mapQ >= 5)|
 |---|---|---|---|---|---|---|---|---|---|---|
-|RAP1_IAA_30M_REP1|0.08|0.08|0.08|0.0|0.08|0.08|0.08|0.0|0.0|0.0|
-|RAP1_UNINDUCED_REP1|0.04|0.04|0.04|0.0|0.0|0.0|0.0|0.0|0.0|0.0|
-|RAP1_UNINDUCED_REP2|0.08|0.08|0.08|0.0|0.0|0.0|0.0|0.0|0.0|0.0|
-|WT_REP1|0.15|0.15|0.15|0.0|0.15|0.15|0.15|0.0|0.0|0.0|
-|WT_REP2|0.08|0.08|0.08|0.0|0.08|0.08|0.08|0.0|0.0|0.0|
+|RAP1_IAA_30M_REP1|0.08|0.08|0.08|0.01|0.08|0.08|0.08|0.0|0.0|0.0|
+|RAP1_UNINDUCED_REP1|0.04|0.04|0.04|0.03|0.0|0.0|0.0|0.0|0.0|0.0|
+|RAP1_UNINDUCED_REP2|0.08|0.08|0.08|0.07|0.0|0.0|0.0|0.0|0.0|0.0|
+|WT_REP1|0.15|0.15|0.15|0.03|0.15|0.15|0.15|0.0|0.0|0.0|
+|WT_REP2|0.08|0.08|0.08|0.01|0.08|0.08|0.08|0.0|0.0|0.0|
 
 ----------------------
 
@@ -130,11 +130,11 @@ Diff chr (mapQ >= 5) - Diff chr (mapQ >= 5)
 
 |Sample Name|Total Reads|Total Passed QC|Mapped|Duplicates|Paired in Sequencing|Properly Paired|Self and mate mapped|Singletons|Mate mapped to diff chr|Diff chr (mapQ >= 5)|
 |---|---|---|---|---|---|---|---|---|---|---|
-|RAP1_IAA_30M_REP1|100.00|100.00|100.00|0.0|100.00|100.00|100.00|0.0|0.0|0.0|
-|RAP1_UNINDUCED_REP1|100.00|100.00|100.00|0.0|0.0|0.0|0.0|0.0|0.0|0.0|
-|RAP1_UNINDUCED_REP2|100.00|100.00|100.00|0.0|0.0|0.0|0.0|0.0|0.0|0.0|
-|WT_REP1|100.00|100.00|100.00|0.0|100.00|100.00|100.00|0.0|0.0|0.0|
-|WT_REP2|100.00|100.00|100.00|0.0|100.00|100.00|100.00|0.0|0.0|0.0|
+|RAP1_IAA_30M_REP1|100.00|100.00|100.00|12.24|100.00|100.00|100.00|0.0|0.0|0.0|
+|RAP1_UNINDUCED_REP1|100.00|100.00|100.00|74.93|0.0|0.0|0.0|0.0|0.0|0.0|
+|RAP1_UNINDUCED_REP2|100.00|100.00|100.00|81.31|0.0|0.0|0.0|0.0|0.0|0.0|
+|WT_REP1|100.00|100.00|100.00|20.45|100.00|100.00|100.00|0.0|0.0|0.0|
+|WT_REP2|100.00|100.00|100.00|12.77|100.00|100.00|100.00|0.0|0.0|0.0|
 
 ----------------------
 
@@ -946,7 +946,7 @@ Section:
 <h4>Methods</h4>
 <p>Data was processed using nf-core/projectrnaseq v1.0.0dev  of the nf-core collection of workflows (<a href="https://doi.org/10.1038/s41587-020-0439-x">Ewels <em>et al.</em>, 2020</a>), utilising reproducible software environments from the Bioconda (<a href="https://doi.org/10.1038/s41592-018-0046-7">Grüning <em>et al.</em>, 2018</a>) and Biocontainers (<a href="https://doi.org/10.1093/bioinformatics/btx192">da Veiga Leprevost <em>et al.</em>, 2017</a>) projects.</p>
 <p>The pipeline was executed with Nextflow v26.04.6 (<a href="https://doi.org/10.1038/nbt.3820">Di Tommaso <em>et al.</em>, 2017</a>) with the following command:</p>
-<pre><code>nextflow run . -profile test,docker --outdir outcome_test –resume</code></pre>
+<pre><code>nextflow run . -profile test,docker --outdir outcome_test -resume</code></pre>
 <p></p>
 <h4>References</h4>
 <ul>
@@ -972,7 +972,7 @@ Tool: nf-core/projectrnaseq Workflow Summary
 Section: 
 <p style="font-size:110%"><b>Input/output options</b></p>
 <dl class="dl-horizontal">
-    <dt>input</dt><dd><samp>/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/project_data/samplesheet_test_remote.csv</samp></dd>
+    <dt>input</dt><dd><samp>/Users/ivan/Desktop/CompWorkflow/projectrnaseq/project_data/samplesheet_test_remote.csv</samp></dd>
     <dt>outdir</dt><dd><samp>outcome_test</samp></dd>
 </dl>
 <p style="font-size:110%"><b>Reference genome options</b></p>
@@ -986,7 +986,7 @@ Section:
 </dl>
 <p style="font-size:110%"><b>Generic options</b></p>
 <dl class="dl-horizontal">
-    <dt>trace_report_suffix</dt><dd><samp>2026-10-06_19-13-59</samp></dd>
+    <dt>trace_report_suffix</dt><dd><samp>2026-10-07_13-15-04</samp></dd>
 </dl>
 <p style="font-size:110%"><b>Other parameters</b></p>
 <dl class="dl-horizontal">
@@ -995,13 +995,13 @@ Section:
 </dl>
 <p style="font-size:110%"><b>Core Nextflow options</b></p>
 <dl class="dl-horizontal">
-    <dt>configFiles</dt><dd><samp>/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/nextflow.config</samp></dd>
+    <dt>configFiles</dt><dd><samp>/Users/ivan/Desktop/CompWorkflow/projectrnaseq/nextflow.config</samp></dd>
     <dt>containerEngine</dt><dd><samp>docker</samp></dd>
-    <dt>launchDir</dt><dd><samp>/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq</samp></dd>
+    <dt>launchDir</dt><dd><samp>/Users/ivan/Desktop/CompWorkflow/projectrnaseq</samp></dd>
     <dt>profile</dt><dd><samp>test,docker</samp></dd>
-    <dt>projectDir</dt><dd><samp>/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq</samp></dd>
-    <dt>runName</dt><dd><samp>deadly_bassi</samp></dd>
-    <dt>userName</dt><dd><samp>paula</samp></dd>
-    <dt>workDir</dt><dd><samp>/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/work</samp></dd>
+    <dt>projectDir</dt><dd><samp>/Users/ivan/Desktop/CompWorkflow/projectrnaseq</samp></dd>
+    <dt>runName</dt><dd><samp>trusting_mayer</samp></dd>
+    <dt>userName</dt><dd><samp>ivan</samp></dd>
+    <dt>workDir</dt><dd><samp>/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work</samp></dd>
 </dl>
 
