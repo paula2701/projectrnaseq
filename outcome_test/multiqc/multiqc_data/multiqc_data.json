@@ -1,47 +1,148 @@
 {
     "report_multiqc_command": "/opt/wave/.pixi/envs/default/bin/multiqc --force --config 1/multiqc_config.yml .",
     "report_data_sources": {
+        "featureCounts": {
+            "all_sections": {
+                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/27/RAP1_IAA_30M_REP1.featureCounts.tsv.summary",
+                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/26/RAP1_UNINDUCED_REP1.featureCounts.tsv.summary",
+                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/28/RAP1_UNINDUCED_REP2.featureCounts.tsv.summary",
+                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/29/WT_REP1.featureCounts.tsv.summary",
+                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/30/WT_REP2.featureCounts.tsv.summary"
+            }
+        },
         "Samtools": {
             "flagstat": {
-                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/24/RAP1_IAA_30M_REP1.flagstat",
-                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/20/RAP1_UNINDUCED_REP1.flagstat",
-                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/23/RAP1_UNINDUCED_REP2.flagstat",
-                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/25/WT_REP1.flagstat",
-                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/22/WT_REP2.flagstat"
+                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/21/RAP1_IAA_30M_REP1.flagstat",
+                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/20/RAP1_UNINDUCED_REP1.flagstat",
+                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/19/RAP1_UNINDUCED_REP2.flagstat",
+                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/25/WT_REP1.flagstat",
+                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/23/WT_REP2.flagstat"
             }
         },
         "Bowtie 2 / HiSAT2": {
             "all_sections": {
-                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/19/RAP1_IAA_30M_REP1.hisat2.summary.log",
-                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/5/RAP1_UNINDUCED_REP1.hisat2.summary.log",
-                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/18/RAP1_UNINDUCED_REP2.hisat2.summary.log",
-                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/21/WT_REP1.hisat2.summary.log",
-                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/16/WT_REP2.hisat2.summary.log"
+                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/14/RAP1_IAA_30M_REP1.hisat2.summary.log",
+                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/12/RAP1_UNINDUCED_REP1.hisat2.summary.log",
+                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/13/RAP1_UNINDUCED_REP2.hisat2.summary.log",
+                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/24/WT_REP1.hisat2.summary.log",
+                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/16/WT_REP2.hisat2.summary.log"
             }
         },
         "fastp": {
             "all_sections": {
-                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/11/RAP1_IAA_30M_REP1.fastp.json",
-                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/4/RAP1_UNINDUCED_REP1.fastp.json",
-                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/12/RAP1_UNINDUCED_REP2.fastp.json",
-                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/17/WT_REP1.fastp.json",
-                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/10/WT_REP2.fastp.json"
+                "RAP1_IAA_30M_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/9/RAP1_IAA_30M_REP1.fastp.json",
+                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/4/RAP1_UNINDUCED_REP1.fastp.json",
+                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/11/RAP1_UNINDUCED_REP2.fastp.json",
+                "WT_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/22/WT_REP1.fastp.json",
+                "WT_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/15/WT_REP2.fastp.json"
             }
         },
         "FastQC": {
             "all_sections": {
-                "RAP1_IAA_30M_REP1_1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/6/RAP1_IAA_30M_REP1_1_fastqc.zip",
-                "RAP1_IAA_30M_REP1_2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/7/RAP1_IAA_30M_REP1_2_fastqc.zip",
-                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/3/RAP1_UNINDUCED_REP1_fastqc.zip",
-                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/13/RAP1_UNINDUCED_REP2_fastqc.zip",
-                "WT_REP1_1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/14/WT_REP1_1_fastqc.zip",
-                "WT_REP1_2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/15/WT_REP1_2_fastqc.zip",
-                "WT_REP2_1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/8/WT_REP2_1_fastqc.zip",
-                "WT_REP2_2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044/9/WT_REP2_2_fastqc.zip"
+                "RAP1_IAA_30M_REP1_1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/7/RAP1_IAA_30M_REP1_1_fastqc.zip",
+                "RAP1_IAA_30M_REP1_2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/8/RAP1_IAA_30M_REP1_2_fastqc.zip",
+                "RAP1_UNINDUCED_REP1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/3/RAP1_UNINDUCED_REP1_fastqc.zip",
+                "RAP1_UNINDUCED_REP2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/10/RAP1_UNINDUCED_REP2_fastqc.zip",
+                "WT_REP1_1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/17/WT_REP1_1_fastqc.zip",
+                "WT_REP1_2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/18/WT_REP1_2_fastqc.zip",
+                "WT_REP2_1": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/5/WT_REP2_1_fastqc.zip",
+                "WT_REP2_2": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185/6/WT_REP2_2_fastqc.zip"
             }
         }
     },
     "report_general_stats_data": {
+        "featurecounts": {
+            "RAP1_IAA_30M_REP1": {
+                "Total": 39082,
+                "Assigned": 36772,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 338,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 1951,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 21,
+                "percent_assigned": 94.08935059618238
+            },
+            "RAP1_UNINDUCED_REP1": {
+                "Total": 42086,
+                "Assigned": 38418,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 611,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 3021,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 36,
+                "percent_assigned": 91.28451266454402
+            },
+            "RAP1_UNINDUCED_REP2": {
+                "Total": 84437,
+                "Assigned": 76960,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 1191,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 6213,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 73,
+                "percent_assigned": 91.1448772457572
+            },
+            "WT_REP1": {
+                "Total": 75970,
+                "Assigned": 70639,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 743,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 4537,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 51,
+                "percent_assigned": 92.98275635119127
+            },
+            "WT_REP2": {
+                "Total": 38634,
+                "Assigned": 36004,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 388,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 2214,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 28,
+                "percent_assigned": 93.19252471915928
+            }
+        },
         "samtools": {
             "RAP1_IAA_30M_REP1": {
                 "total_passed": 78164,
@@ -490,6 +591,34 @@
         }
     },
     "report_general_stats_headers": {
+        "featurecounts": {
+            "Assigned": {
+                "title": "Assigned",
+                "description": "Assigned reads (millions)",
+                "scale": "PuBu",
+                "shared_key": "read_count",
+                "hidden": true,
+                "namespace": "featureCounts",
+                "clean_rid": "featurecounts-Assigned",
+                "rid": "featurecounts-Assigned",
+                "modify": null,
+                "min": 0,
+                "suffix": " M",
+                "placement": 1000
+            },
+            "percent_assigned": {
+                "title": "Assigned",
+                "description": "% Assigned reads",
+                "max": 100,
+                "min": 0,
+                "suffix": "%",
+                "scale": "RdYlGn",
+                "namespace": "featureCounts",
+                "clean_rid": "featurecounts-percent_assigned",
+                "rid": "featurecounts-percent_assigned",
+                "placement": 1000
+            }
+        },
         "samtools": {
             "flagstat_total": {
                 "title": "Reads",
@@ -754,8 +883,361 @@
             }
         }
     },
-    "report_creation_date": "2026-10-07, 11:16 UTC",
+    "report_creation_date": "2026-10-07, 12:51 UTC",
     "report_plot_data": {
+        "featureCounts_assignment_plot": {
+            "id": "featureCounts_assignment_plot",
+            "anchor": "featureCounts_assignment_plot",
+            "plot_type": "bar plot",
+            "layout": {
+                "autosize": true,
+                "height": 300,
+                "hoverlabel": {
+                    "namelength": -1,
+                    "bgcolor": "white",
+                    "font": {
+                        "color": "rgba(60,60,60,1)"
+                    }
+                },
+                "margin": {
+                    "b": 65,
+                    "l": 60,
+                    "pad": 5,
+                    "r": 15,
+                    "t": 50
+                },
+                "showlegend": true,
+                "template": {
+                    "layout": {
+                        "colorway": [
+                            "#7cb5ec",
+                            "#434348",
+                            "#90ed7d",
+                            "#f7a35c",
+                            "#8085e9",
+                            "#f15c80",
+                            "#e4d354",
+                            "#2b908f",
+                            "#f45b5b",
+                            "#91e8e1"
+                        ],
+                        "font": {
+                            "color": "rgba(60,60,60,1)",
+                            "family": "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+                        },
+                        "legend": {
+                            "font": {
+                                "color": "rgba(60,60,60,1)"
+                            }
+                        },
+                        "modebar": {
+                            "activecolor": "rgba(80, 80, 80, 1)",
+                            "bgcolor": "rgba(0, 0, 0, 0)",
+                            "color": "rgba(100, 100, 100, 0.5)"
+                        },
+                        "paper_bgcolor": "rgba(0,0,0,0)",
+                        "plot_bgcolor": "rgba(0,0,0,0)",
+                        "title": {
+                            "font": {
+                                "color": "rgba(60,60,60,1)",
+                                "size": 20
+                            }
+                        },
+                        "xaxis": {
+                            "color": "rgba(100,100,100,1)",
+                            "gridcolor": "rgba(128,128,128,0.15)",
+                            "spikecolor": "rgba(60,60,60,1)",
+                            "spikethickness": -3,
+                            "tickfont": {
+                                "color": "rgba(80,80,80,1)",
+                                "size": 10
+                            },
+                            "zerolinecolor": "rgba(128,128,128,0.2)"
+                        },
+                        "yaxis": {
+                            "color": "rgba(100,100,100,1)",
+                            "gridcolor": "rgba(128,128,128,0.15)",
+                            "spikecolor": "rgba(60,60,60,1)",
+                            "spikethickness": -3,
+                            "tickfont": {
+                                "color": "rgba(80,80,80,1)",
+                                "size": 10
+                            },
+                            "zerolinecolor": "rgba(128,128,128,0.2)"
+                        }
+                    }
+                },
+                "title": {
+                    "text": "featureCounts: Assignments",
+                    "x": 0.5,
+                    "xanchor": "center"
+                },
+                "xaxis": {
+                    "automargin": true
+                },
+                "yaxis": {
+                    "automargin": true,
+                    "showgrid": false,
+                    "categoryorder": "trace",
+                    "type": "category"
+                },
+                "barmode": "relative",
+                "bargroupgap": 0,
+                "bargap": 0.2,
+                "legend": {
+                    "tracegroupgap": 0,
+                    "traceorder": "normal"
+                },
+                "hovermode": "y unified"
+            },
+            "datasets": [
+                {
+                    "plot_id": "featureCounts_assignment_plot",
+                    "label": "1",
+                    "uid": "featureCounts_assignment_plot",
+                    "dconfig": {
+                        "title": "featureCounts: Assignments",
+                        "subtitle": "5 bars"
+                    },
+                    "layout": {
+                        "title": {
+                            "text": "featureCounts: Assignments<br><sup>5 bars</sup>"
+                        },
+                        "xaxis": {
+                            "title": {
+                                "text": "# Reads"
+                            },
+                            "hoverformat": ",.2f",
+                            "ticksuffix": "",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": 0,
+                                "maxallowed": 84437.0
+                            }
+                        },
+                        "yaxis": {
+                            "title": null,
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        },
+                        "showlegend": true
+                    },
+                    "trace_params": {
+                        "hovertemplate": "<b></b>%{meta}: <b>%{x}</b><extra></extra>",
+                        "orientation": "h",
+                        "marker": {
+                            "line": {
+                                "width": 0
+                            }
+                        },
+                        "textposition": "inside",
+                        "insidetextanchor": "start"
+                    },
+                    "pct_range": {
+                        "xaxis": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "yaxis": {
+                            "min": 0,
+                            "max": 100
+                        }
+                    },
+                    "n_series": 5,
+                    "cats": [
+                        {
+                            "name": "Assigned",
+                            "color": "rgba(124,181,236,1)",
+                            "data": [
+                                36004.0,
+                                70639.0,
+                                76960.0,
+                                38418.0,
+                                36772.0
+                            ],
+                            "data_pct": [
+                                93.19252471915928,
+                                92.98275635119127,
+                                91.1448772457572,
+                                91.28451266454402,
+                                94.08935059618238
+                            ]
+                        },
+                        {
+                            "name": "Unassigned: Multi Mapping",
+                            "color": "rgba(244,91,91,1)",
+                            "data": [
+                                388.0,
+                                743.0,
+                                1191.0,
+                                611.0,
+                                338.0
+                            ],
+                            "data_pct": [
+                                1.0042967334472226,
+                                0.9780176385415295,
+                                1.4105190852351457,
+                                1.4517891935560518,
+                                0.8648482677447419
+                            ]
+                        },
+                        {
+                            "name": "Unassigned: No Features",
+                            "color": "rgba(67,67,72,1)",
+                            "data": [
+                                2214.0,
+                                4537.0,
+                                6213.0,
+                                3021.0,
+                                1951.0
+                            ],
+                            "data_pct": [
+                                5.7307035253921415,
+                                5.972094247729367,
+                                7.358148678896692,
+                                7.178159007746043,
+                                4.9920679596745305
+                            ]
+                        },
+                        {
+                            "name": "Unassigned: Ambiguity",
+                            "color": "rgba(247,163,92,1)",
+                            "data": [
+                                28.0,
+                                51.0,
+                                73.0,
+                                36.0,
+                                21.0
+                            ],
+                            "data_pct": [
+                                0.07247502200134597,
+                                0.06713176253784389,
+                                0.08645499011097031,
+                                0.08553913415387539,
+                                0.05373317639834194
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "WT_REP2",
+                        "WT_REP1",
+                        "RAP1_UNINDUCED_REP2",
+                        "RAP1_UNINDUCED_REP1",
+                        "RAP1_IAA_30M_REP1"
+                    ],
+                    "cats_clustered": null,
+                    "samples_clustered": null,
+                    "group_labels": null,
+                    "offset_groups": null
+                }
+            ],
+            "pconfig": {
+                "id": "featureCounts_assignment_plot",
+                "title": "featureCounts: Assignments",
+                "subtitle": null,
+                "anchor": null,
+                "table_title": null,
+                "height": null,
+                "width": null,
+                "square": false,
+                "logswitch": false,
+                "logswitch_active": false,
+                "logswitch_label": "Log10",
+                "cpswitch": true,
+                "cpswitch_c_active": true,
+                "cpswitch_counts_label": "Number of Reads",
+                "cpswitch_percent_label": "Percentages",
+                "xLog": null,
+                "yLog": null,
+                "xlog": false,
+                "ylog": false,
+                "data_labels": [],
+                "xTitle": null,
+                "yTitle": null,
+                "xlab": null,
+                "ylab": "# Reads",
+                "xsuffix": null,
+                "ysuffix": null,
+                "tt_suffix": null,
+                "xLabFormat": null,
+                "yLabFormat": null,
+                "xLabelFormat": null,
+                "yLabelFormat": null,
+                "xlab_format": null,
+                "ylab_format": null,
+                "tt_label": null,
+                "xDecimals": null,
+                "yDecimals": null,
+                "decimalPlaces": null,
+                "x_decimals": null,
+                "y_decimals": null,
+                "tt_decimals": null,
+                "xmin": null,
+                "xmax": null,
+                "ymin": null,
+                "ymax": null,
+                "xFloor": null,
+                "xCeiling": null,
+                "yFloor": null,
+                "yCeiling": null,
+                "x_clipmin": null,
+                "x_clipmax": null,
+                "y_clipmin": null,
+                "y_clipmax": null,
+                "save_data_file": true,
+                "showlegend": null,
+                "xMinRange": null,
+                "yMinRange": null,
+                "x_minrange": null,
+                "y_minrange": null,
+                "xPlotBands": null,
+                "yPlotBands": null,
+                "xPlotLines": null,
+                "yPlotLines": null,
+                "x_bands": null,
+                "y_bands": null,
+                "x_lines": null,
+                "y_lines": null,
+                "series_label": "samples",
+                "flat_if_very_large": true,
+                "stacking": "relative",
+                "hide_empty": null,
+                "hide_zero_cats": true,
+                "sort_samples": true,
+                "cluster_samples": false,
+                "cluster_method": "complete",
+                "cluster_switch_clustered_active": true,
+                "use_legend": null,
+                "suffix": null,
+                "lab_format": null,
+                "sample_groups": null
+            },
+            "add_log_tab": false,
+            "add_pct_tab": true,
+            "l_active": false,
+            "p_active": false,
+            "pct_axis_update": {
+                "ticksuffix": "%",
+                "hoverformat": ".1f"
+            },
+            "axis_controlled_by_switches": [
+                "xaxis"
+            ],
+            "square": false,
+            "flat": false,
+            "defer_render": false,
+            "section_anchor": null,
+            "module_anchor": null,
+            "sort_switch_sorted_active": false,
+            "cluster_switch_clustered_active": true
+        },
         "samtools-flagstat-table": {
             "id": "samtools-flagstat-table",
             "anchor": "samtools-flagstat-table",
@@ -46768,6 +47250,8 @@
                     },
                     "n_series": 11,
                     "metrics": [
+                        "featurecounts-Assigned",
+                        "featurecounts-percent_assigned",
                         "samtools_flagstat-flagstat_total",
                         "samtools_flagstat-mapped_passed",
                         "samtools_flagstat-mapped_passed_pct",
@@ -46790,6 +47274,48 @@
                         "fastqc-total_sequences"
                     ],
                     "header_by_metric": {
+                        "featurecounts-Assigned": {
+                            "title": "Assigned",
+                            "description": "Assigned reads (millions)",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 0.191184,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.00095592,
+                                    0.1921446996
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "featureCounts",
+                            "color": "55,126,184",
+                            "hoverformat": ".2f"
+                        },
+                        "featurecounts-percent_assigned": {
+                            "title": "Assigned",
+                            "description": "% Assigned reads",
+                            "suffix": "%",
+                            "dmin": 0.0,
+                            "dmax": 100.0,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "%",
+                                "tickvals": null,
+                                "range": [
+                                    -0.5,
+                                    100.5025
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "featureCounts",
+                            "color": "55,126,184",
+                            "hoverformat": ".2f"
+                        },
                         "samtools_flagstat-flagstat_total": {
                             "title": "Reads",
                             "description": "Total reads in the bam file (millions)",
@@ -46808,7 +47334,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "Samtools: flagstat",
-                            "color": "55,126,184",
+                            "color": "77,175,74",
                             "hoverformat": ".2f"
                         },
                         "samtools_flagstat-mapped_passed": {
@@ -46829,7 +47355,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "Samtools: flagstat",
-                            "color": "55,126,184",
+                            "color": "77,175,74",
                             "hoverformat": ".2f"
                         },
                         "samtools_flagstat-mapped_passed_pct": {
@@ -46850,7 +47376,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "Samtools: flagstat",
-                            "color": "55,126,184",
+                            "color": "77,175,74",
                             "hoverformat": ".2f"
                         },
                         "bowtie_2_hisat2-overall_alignment_rate": {
@@ -46871,7 +47397,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "Bowtie 2 / HiSAT2",
-                            "color": "77,175,74",
+                            "color": "152,78,163",
                             "hoverformat": ".2f"
                         },
                         "fastp-pct_duplication": {
@@ -46892,7 +47418,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastp-after_filtering_q30_rate": {
@@ -46913,7 +47439,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastp-after_filtering_q30_bases": {
@@ -46934,7 +47460,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastp-filtering_result_passed_filter_reads": {
@@ -46955,7 +47481,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastp-after_filtering_gc_content": {
@@ -46976,7 +47502,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastp-pct_surviving_reads": {
@@ -46997,7 +47523,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastp-pct_surviving_bases": {
@@ -47018,7 +47544,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastp-pct_adapter": {
@@ -47039,7 +47565,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastp-before_filtering_read1_mean_length": {
@@ -47060,7 +47586,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastp-before_filtering_read2_mean_length": {
@@ -47081,7 +47607,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "fastp",
-                            "color": "152,78,163",
+                            "color": "255,127,0",
                             "hoverformat": ".2f"
                         },
                         "fastqc-percent_duplicates": {
@@ -47102,7 +47628,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "FastQC",
-                            "color": "255,127,0",
+                            "color": "228,26,28",
                             "hoverformat": ".2f"
                         },
                         "fastqc-percent_gc": {
@@ -47123,7 +47649,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "FastQC",
-                            "color": "255,127,0",
+                            "color": "228,26,28",
                             "hoverformat": ".2f"
                         },
                         "fastqc-avg_sequence_length": {
@@ -47144,7 +47670,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "FastQC",
-                            "color": "255,127,0",
+                            "color": "228,26,28",
                             "hoverformat": ".2f"
                         },
                         "fastqc-median_sequence_length": {
@@ -47165,7 +47691,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "FastQC",
-                            "color": "255,127,0",
+                            "color": "228,26,28",
                             "hoverformat": null
                         },
                         "fastqc-percent_fails": {
@@ -47186,7 +47712,7 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "FastQC",
-                            "color": "255,127,0",
+                            "color": "228,26,28",
                             "hoverformat": ".2f"
                         },
                         "fastqc-total_sequences": {
@@ -47207,11 +47733,25 @@
                             "show_only_outliers": false,
                             "show_points": true,
                             "namespace": "FastQC",
-                            "color": "255,127,0",
+                            "color": "228,26,28",
                             "hoverformat": ".2f"
                         }
                     },
                     "violin_value_by_sample_by_metric": {
+                        "featurecounts-Assigned": {
+                            "RAP1_IAA_30M_REP1": 0.036772,
+                            "RAP1_UNINDUCED_REP1": 0.038418,
+                            "RAP1_UNINDUCED_REP2": 0.07696,
+                            "WT_REP1": 0.070639,
+                            "WT_REP2": 0.036004
+                        },
+                        "featurecounts-percent_assigned": {
+                            "RAP1_IAA_30M_REP1": 94.08935059618238,
+                            "RAP1_UNINDUCED_REP1": 91.28451266454402,
+                            "RAP1_UNINDUCED_REP2": 91.1448772457572,
+                            "WT_REP1": 92.98275635119127,
+                            "WT_REP2": 93.19252471915928
+                        },
                         "samtools_flagstat-flagstat_total": {
                             "RAP1_IAA_30M_REP1": 0.078164,
                             "RAP1_UNINDUCED_REP1": 0.042086,
@@ -47370,6 +47910,8 @@
                         }
                     },
                     "scatter_value_by_sample_by_metric": {
+                        "featurecounts-Assigned": {},
+                        "featurecounts-percent_assigned": {},
                         "samtools_flagstat-flagstat_total": {},
                         "samtools_flagstat-mapped_passed": {},
                         "samtools_flagstat-mapped_passed_pct": {},
@@ -47508,6 +48050,199 @@
                             "rows_are_samples": true
                         },
                         "section_by_id": {
+                            "featurecounts": {
+                                "column_by_key": {
+                                    "Assigned": {
+                                        "rid": "featurecounts-Assigned",
+                                        "clean_rid": "featurecounts-Assigned",
+                                        "title": "Assigned",
+                                        "description": "Assigned reads (millions)",
+                                        "scale": "PuBu",
+                                        "hidden": true,
+                                        "placement": 1000.0,
+                                        "namespace": "featureCounts",
+                                        "colour": null,
+                                        "color": "55,126,184",
+                                        "max": null,
+                                        "dmax": 0.191184,
+                                        "min": 0.0,
+                                        "dmin": 0.0,
+                                        "ceiling": null,
+                                        "floor": null,
+                                        "minRange": null,
+                                        "minrange": null,
+                                        "shared_key": "read_count",
+                                        "tt_decimals": null,
+                                        "suffix": " M",
+                                        "cond_formatting_colours": [
+                                            {
+                                                "blue": "#337ab7"
+                                            },
+                                            {
+                                                "lbue": "#5bc0de"
+                                            },
+                                            {
+                                                "pass": "#5cb85c"
+                                            },
+                                            {
+                                                "warn": "#f0ad4e"
+                                            },
+                                            {
+                                                "fail": "#d9534f"
+                                            },
+                                            {
+                                                "male": "#5bc0de"
+                                            },
+                                            {
+                                                "female": "#d9534f"
+                                            }
+                                        ],
+                                        "cond_formatting_rules": {},
+                                        "bgcols": {},
+                                        "bars_zero_centrepoint": false,
+                                        "modify": null,
+                                        "format": null
+                                    },
+                                    "percent_assigned": {
+                                        "rid": "featurecounts-percent_assigned",
+                                        "clean_rid": "featurecounts-percent_assigned",
+                                        "title": "Assigned",
+                                        "description": "% Assigned reads",
+                                        "scale": "RdYlGn",
+                                        "hidden": false,
+                                        "placement": 1000.0,
+                                        "namespace": "featureCounts",
+                                        "colour": null,
+                                        "color": "55,126,184",
+                                        "max": 100.0,
+                                        "dmax": 100.0,
+                                        "min": 0.0,
+                                        "dmin": 0.0,
+                                        "ceiling": null,
+                                        "floor": null,
+                                        "minRange": null,
+                                        "minrange": null,
+                                        "shared_key": null,
+                                        "tt_decimals": null,
+                                        "suffix": "%",
+                                        "cond_formatting_colours": [
+                                            {
+                                                "blue": "#337ab7"
+                                            },
+                                            {
+                                                "lbue": "#5bc0de"
+                                            },
+                                            {
+                                                "pass": "#5cb85c"
+                                            },
+                                            {
+                                                "warn": "#f0ad4e"
+                                            },
+                                            {
+                                                "fail": "#d9534f"
+                                            },
+                                            {
+                                                "male": "#5bc0de"
+                                            },
+                                            {
+                                                "female": "#d9534f"
+                                            }
+                                        ],
+                                        "cond_formatting_rules": {},
+                                        "bgcols": {},
+                                        "bars_zero_centrepoint": false,
+                                        "modify": null,
+                                        "format": null
+                                    }
+                                },
+                                "rows_by_sgroup": {
+                                    "RAP1_IAA_30M_REP1": [
+                                        {
+                                            "sample": "RAP1_IAA_30M_REP1",
+                                            "data": {
+                                                "Assigned": {
+                                                    "raw": 36772,
+                                                    "mod": 0.036772,
+                                                    "fmt": "0.0"
+                                                },
+                                                "percent_assigned": {
+                                                    "raw": 94.08935059618238,
+                                                    "mod": 94.08935059618238,
+                                                    "fmt": "94.1"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "RAP1_UNINDUCED_REP1": [
+                                        {
+                                            "sample": "RAP1_UNINDUCED_REP1",
+                                            "data": {
+                                                "Assigned": {
+                                                    "raw": 38418,
+                                                    "mod": 0.038418,
+                                                    "fmt": "0.0"
+                                                },
+                                                "percent_assigned": {
+                                                    "raw": 91.28451266454402,
+                                                    "mod": 91.28451266454402,
+                                                    "fmt": "91.3"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "RAP1_UNINDUCED_REP2": [
+                                        {
+                                            "sample": "RAP1_UNINDUCED_REP2",
+                                            "data": {
+                                                "Assigned": {
+                                                    "raw": 76960,
+                                                    "mod": 0.07696,
+                                                    "fmt": "0.1"
+                                                },
+                                                "percent_assigned": {
+                                                    "raw": 91.1448772457572,
+                                                    "mod": 91.1448772457572,
+                                                    "fmt": "91.1"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "WT_REP1": [
+                                        {
+                                            "sample": "WT_REP1",
+                                            "data": {
+                                                "Assigned": {
+                                                    "raw": 70639,
+                                                    "mod": 0.070639,
+                                                    "fmt": "0.1"
+                                                },
+                                                "percent_assigned": {
+                                                    "raw": 92.98275635119127,
+                                                    "mod": 92.98275635119127,
+                                                    "fmt": "93.0"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "WT_REP2": [
+                                        {
+                                            "sample": "WT_REP2",
+                                            "data": {
+                                                "Assigned": {
+                                                    "raw": 36004,
+                                                    "mod": 0.036004,
+                                                    "fmt": "0.0"
+                                                },
+                                                "percent_assigned": {
+                                                    "raw": 93.19252471915928,
+                                                    "mod": 93.19252471915928,
+                                                    "fmt": "93.2"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
                             "samtools": {
                                 "column_by_key": {
                                     "flagstat_total": {
@@ -47520,7 +48255,7 @@
                                         "placement": 1000.0,
                                         "namespace": "Samtools: flagstat",
                                         "colour": null,
-                                        "color": "55,126,184",
+                                        "color": "77,175,74",
                                         "max": null,
                                         "dmax": 0.191184,
                                         "min": 0.0,
@@ -47571,7 +48306,7 @@
                                         "placement": 1000.0,
                                         "namespace": "Samtools: flagstat",
                                         "colour": null,
-                                        "color": "55,126,184",
+                                        "color": "77,175,74",
                                         "max": null,
                                         "dmax": 0.191184,
                                         "min": 0.0,
@@ -47622,7 +48357,7 @@
                                         "placement": 1000.0,
                                         "namespace": "Samtools: flagstat",
                                         "colour": null,
-                                        "color": "55,126,184",
+                                        "color": "77,175,74",
                                         "max": 100.0,
                                         "dmax": 100.0,
                                         "min": 0.0,
@@ -47789,7 +48524,7 @@
                                         "placement": 1000.0,
                                         "namespace": "Bowtie 2 / HiSAT2",
                                         "colour": null,
-                                        "color": "77,175,74",
+                                        "color": "152,78,163",
                                         "max": 100.0,
                                         "dmax": 100.0,
                                         "min": 0.0,
@@ -47906,7 +48641,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": null,
                                         "dmax": 61.333000000000006,
                                         "min": null,
@@ -47957,7 +48692,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": null,
                                         "dmax": 94.7265,
                                         "min": null,
@@ -48008,7 +48743,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": null,
                                         "dmax": 17.86724,
                                         "min": 0.0,
@@ -48059,7 +48794,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": null,
                                         "dmax": 0.191184,
                                         "min": 0.0,
@@ -48110,7 +48845,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": null,
                                         "dmax": 40.5213,
                                         "min": null,
@@ -48161,7 +48896,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": 100.0,
                                         "dmax": 100.0,
                                         "min": 0.0,
@@ -48212,7 +48947,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": 100.0,
                                         "dmax": 100.0,
                                         "min": 0.0,
@@ -48263,7 +48998,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": 100.0,
                                         "dmax": 100.0,
                                         "min": 0.0,
@@ -48314,7 +49049,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": null,
                                         "dmax": 101.0,
                                         "min": null,
@@ -48365,7 +49100,7 @@
                                         "placement": 1000.0,
                                         "namespace": "fastp",
                                         "colour": null,
-                                        "color": "152,78,163",
+                                        "color": "255,127,0",
                                         "max": null,
                                         "dmax": 101.0,
                                         "min": null,
@@ -48697,7 +49432,7 @@
                                         "placement": 1000.0,
                                         "namespace": "FastQC",
                                         "colour": null,
-                                        "color": "255,127,0",
+                                        "color": "228,26,28",
                                         "max": 100.0,
                                         "dmax": 100.0,
                                         "min": 0.0,
@@ -48748,7 +49483,7 @@
                                         "placement": 1000.0,
                                         "namespace": "FastQC",
                                         "colour": null,
-                                        "color": "255,127,0",
+                                        "color": "228,26,28",
                                         "max": 100.0,
                                         "dmax": 100.0,
                                         "min": 0.0,
@@ -48799,7 +49534,7 @@
                                         "placement": 1000.0,
                                         "namespace": "FastQC",
                                         "colour": null,
-                                        "color": "255,127,0",
+                                        "color": "228,26,28",
                                         "max": null,
                                         "dmax": 101.0,
                                         "min": 0.0,
@@ -48850,7 +49585,7 @@
                                         "placement": 1000.0,
                                         "namespace": "FastQC",
                                         "colour": null,
-                                        "color": "255,127,0",
+                                        "color": "228,26,28",
                                         "max": null,
                                         "dmax": 101,
                                         "min": 0.0,
@@ -48901,7 +49636,7 @@
                                         "placement": 1000.0,
                                         "namespace": "FastQC",
                                         "colour": null,
-                                        "color": "255,127,0",
+                                        "color": "228,26,28",
                                         "max": 100.0,
                                         "dmax": 100.0,
                                         "min": 0.0,
@@ -48952,7 +49687,7 @@
                                         "placement": 1000.0,
                                         "namespace": "FastQC",
                                         "colour": null,
-                                        "color": "255,127,0",
+                                        "color": "228,26,28",
                                         "max": null,
                                         "dmax": 0.191184,
                                         "min": 0.0,
@@ -49298,82 +50033,90 @@
                             "1000.0": [
                                 [
                                     0,
-                                    "flagstat_total"
+                                    "Assigned"
                                 ],
                                 [
                                     0,
-                                    "mapped_passed"
-                                ],
-                                [
-                                    0,
-                                    "mapped_passed_pct"
+                                    "percent_assigned"
                                 ],
                                 [
                                     1,
+                                    "flagstat_total"
+                                ],
+                                [
+                                    1,
+                                    "mapped_passed"
+                                ],
+                                [
+                                    1,
+                                    "mapped_passed_pct"
+                                ],
+                                [
+                                    2,
                                     "overall_alignment_rate"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "pct_duplication"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "after_filtering_q30_rate"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "after_filtering_q30_bases"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "filtering_result_passed_filter_reads"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "after_filtering_gc_content"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "pct_surviving_reads"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "pct_surviving_bases"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "pct_adapter"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "before_filtering_read1_mean_length"
                                 ],
                                 [
-                                    2,
+                                    3,
                                     "before_filtering_read2_mean_length"
                                 ],
                                 [
-                                    3,
+                                    4,
                                     "percent_duplicates"
                                 ],
                                 [
-                                    3,
+                                    4,
                                     "percent_gc"
                                 ],
                                 [
-                                    3,
+                                    4,
                                     "avg_sequence_length"
                                 ],
                                 [
-                                    3,
+                                    4,
                                     "median_sequence_length"
                                 ],
                                 [
-                                    3,
+                                    4,
                                     "percent_fails"
                                 ],
                                 [
-                                    3,
+                                    4,
                                     "total_sequences"
                                 ]
                             ]
@@ -49502,13 +50245,105 @@
     "config_subtitle": null,
     "config_title": null,
     "config_version": "1.35",
-    "config_output_dir": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044",
+    "config_output_dir": "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185",
     "config_sample_names_rename": [],
     "config_sample_names_rename_buttons": [],
     "config_analysis_dir_abs": [
-        "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/68/a765be66844c609b1f9ea13339b044"
+        "/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/e9/badda06d629134a809bb8150ac4185"
     ],
     "report_saved_raw_data": {
+        "multiqc_featurecounts": {
+            "RAP1_IAA_30M_REP1": {
+                "Total": 39082,
+                "Assigned": 36772,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 338,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 1951,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 21,
+                "percent_assigned": 94.08935059618238
+            },
+            "RAP1_UNINDUCED_REP1": {
+                "Total": 42086,
+                "Assigned": 38418,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 611,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 3021,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 36,
+                "percent_assigned": 91.28451266454402
+            },
+            "RAP1_UNINDUCED_REP2": {
+                "Total": 84437,
+                "Assigned": 76960,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 1191,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 6213,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 73,
+                "percent_assigned": 91.1448772457572
+            },
+            "WT_REP1": {
+                "Total": 75970,
+                "Assigned": 70639,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 743,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 4537,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 51,
+                "percent_assigned": 92.98275635119127
+            },
+            "WT_REP2": {
+                "Total": 38634,
+                "Assigned": 36004,
+                "Unassigned_Unmapped": 0,
+                "Unassigned_Read_Type": 0,
+                "Unassigned_Singleton": 0,
+                "Unassigned_MappingQuality": 0,
+                "Unassigned_Chimera": 0,
+                "Unassigned_FragmentLength": 0,
+                "Unassigned_Duplicate": 0,
+                "Unassigned_MultiMapping": 388,
+                "Unassigned_Secondary": 0,
+                "Unassigned_NonSplit": 0,
+                "Unassigned_NoFeatures": 2214,
+                "Unassigned_Overlapping_Length": 0,
+                "Unassigned_Ambiguity": 28,
+                "percent_assigned": 93.19252471915928
+            }
+        },
         "multiqc_samtools_flagstat": {
             "RAP1_IAA_30M_REP1": {
                 "total_passed": 78164,
@@ -86699,6 +87534,8 @@
         },
         "multiqc_general_stats": {
             "RAP1_IAA_30M_REP1": {
+                "featurecounts-Assigned": 0.036772,
+                "featurecounts-percent_assigned": 94.08935059618238,
                 "samtools_flagstat-flagstat_total": 0.078164,
                 "samtools_flagstat-mapped_passed": 0.078164,
                 "samtools_flagstat-mapped_passed_pct": 100.0,
@@ -86715,6 +87552,8 @@
                 "fastp-before_filtering_read2_mean_length": 101.0
             },
             "RAP1_UNINDUCED_REP1": {
+                "featurecounts-Assigned": 0.038418,
+                "featurecounts-percent_assigned": 91.28451266454402,
                 "samtools_flagstat-flagstat_total": 0.042086,
                 "samtools_flagstat-mapped_passed": 0.042086,
                 "samtools_flagstat-mapped_passed_pct": 100.0,
@@ -86736,6 +87575,8 @@
                 "fastqc-total_sequences": 0.049999999999999996
             },
             "RAP1_UNINDUCED_REP2": {
+                "featurecounts-Assigned": 0.07696,
+                "featurecounts-percent_assigned": 91.1448772457572,
                 "samtools_flagstat-flagstat_total": 0.084437,
                 "samtools_flagstat-mapped_passed": 0.084437,
                 "samtools_flagstat-mapped_passed_pct": 100.0,
@@ -86757,6 +87598,8 @@
                 "fastqc-total_sequences": 0.09999999999999999
             },
             "WT_REP1": {
+                "featurecounts-Assigned": 0.070639,
+                "featurecounts-percent_assigned": 92.98275635119127,
                 "samtools_flagstat-flagstat_total": 0.15194,
                 "samtools_flagstat-mapped_passed": 0.15194,
                 "samtools_flagstat-mapped_passed_pct": 100.0,
@@ -86773,6 +87616,8 @@
                 "fastp-before_filtering_read2_mean_length": 101.0
             },
             "WT_REP2": {
+                "featurecounts-Assigned": 0.036004,
+                "featurecounts-percent_assigned": 93.19252471915928,
                 "samtools_flagstat-flagstat_total": 0.077268,
                 "samtools_flagstat-mapped_passed": 0.077268,
                 "samtools_flagstat-mapped_passed_pct": 100.0,

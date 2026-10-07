@@ -36,43 +36,66 @@ Two examples of short summaries:
 
 Tools used in the report:
 
-1. Samtools
+1. featureCounts
+Description: <p>Counts mapped reads for genomic features such as genes, exons, promoter, gene bodies, genomic bins and chromosomal locations.</p>
+Links: http://subread.sourceforge.net/
+
+----------------------
+
+2. Samtools
 Description: <p>Toolkit for interacting with BAM/CRAM files.</p>
 Links: http://www.htslib.org
 
 ----------------------
 
-2. Bowtie 2 / HiSAT2
+3. Bowtie 2 / HiSAT2
 Description: <p>Results from both Bowtie 2 and HISAT2, tools for aligning reads against a reference genome.</p>
 Links: http://bowtie-bio.sourceforge.net/bowtie2/, https://ccb.jhu.edu/software/hisat2/
 
 ----------------------
 
-3. fastp
+4. fastp
 Description: <p>All-in-one FASTQ preprocessor (QC, adapters, trimming, filtering, splitting...).</p>
 Links: https://github.com/OpenGene/fastp
 
 ----------------------
 
-4. FastQC
+5. FastQC
 Description: <p>Quality control tool for high throughput sequencing data.</p>
 Links: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
 ----------------------
 
-5. nf-core/projectrnaseq Methods Description
+6. nf-core/projectrnaseq Methods Description
 Description: <p>Suggested text and references to use when describing pipeline usage within the methods section of a publication.</p>
 Links: https://github.com/nf-core/projectrnaseq
 
 ----------------------
 
-6. nf-core/projectrnaseq Workflow Summary
+7. nf-core/projectrnaseq Workflow Summary
 Description: <ul>
 <li>this information is collected when the pipeline is started.</li>
 </ul>
 Links: https://github.com/nf-core/projectrnaseq
 
 ----------------------
+
+----------------------
+
+Tool: featureCounts
+Section: Assignments
+Title: featureCounts: Assignments
+
+Plot type: bar plot
+Values: # Reads
+
+|Sample|Assigned|Unassigned: Multi Mapping|Unassigned: No Features|Unassigned: Ambiguity|
+|---|---|---|---|---|
+|WT_REP2|36,004|388|2,214|28|
+|WT_REP1|70,639|743|4,537|51|
+|RAP1_UNINDUCED_REP2|76,960|1,191|6,213|73|
+|RAP1_UNINDUCED_REP1|38,418|611|3,021|36|
+|RAP1_IAA_30M_REP1|36,772|338|1,951|21|
 
 ----------------------
 
@@ -986,7 +1009,7 @@ Section:
 </dl>
 <p style="font-size:110%"><b>Generic options</b></p>
 <dl class="dl-horizontal">
-    <dt>trace_report_suffix</dt><dd><samp>2026-10-07_13-15-04</samp></dd>
+    <dt>trace_report_suffix</dt><dd><samp>2026-10-07_14-50-39</samp></dd>
 </dl>
 <p style="font-size:110%"><b>Other parameters</b></p>
 <dl class="dl-horizontal">
@@ -1000,7 +1023,7 @@ Section:
     <dt>launchDir</dt><dd><samp>/Users/ivan/Desktop/CompWorkflow/projectrnaseq</samp></dd>
     <dt>profile</dt><dd><samp>test,docker</samp></dd>
     <dt>projectDir</dt><dd><samp>/Users/ivan/Desktop/CompWorkflow/projectrnaseq</samp></dd>
-    <dt>runName</dt><dd><samp>trusting_mayer</samp></dd>
+    <dt>runName</dt><dd><samp>irreverent_kowalevski</samp></dd>
     <dt>userName</dt><dd><samp>ivan</samp></dd>
     <dt>workDir</dt><dd><samp>/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work</samp></dd>
 </dl>

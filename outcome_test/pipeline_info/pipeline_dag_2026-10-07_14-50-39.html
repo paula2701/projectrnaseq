@@ -1,0 +1,227 @@
+<!--
+  ~ Copyright 2013-2026, Seqera Labs
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<pre class="mermaid" style="text-align: center;">
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#B6ECE2',
+      'primaryTextColor': '#160F26',
+      'primaryBorderColor': '#065647',
+      'lineColor': '#545555',
+      'clusterBkg': '#BABCBD22',
+      'clusterBorder': '#DDDEDE',
+      'fontFamily': 'arial'
+    }
+  }
+}%%
+flowchart TB
+    subgraph " "
+    v0["channel.empty"]
+    v2["channel.fromList"]
+    v7["channel.empty"]
+    v8["channel.empty"]
+    v14["discard_trimmed_pass"]
+    v15["save_trimmed_fail"]
+    v16["save_merged"]
+    v25[" "]
+    v31["hisat2_memory_input"]
+    v35["save_unaligned"]
+    v40[" "]
+    v41["index_format"]
+    v47[" "]
+    v52[" "]
+    v53["index_format"]
+    v59[" "]
+    v89[" "]
+    v99["channel.of"]
+    v104[" "]
+    v107[" "]
+    end
+    subgraph " "
+    v1["versions"]
+    v11[" "]
+    v18[" "]
+    v19[" "]
+    v20[" "]
+    v21[" "]
+    v22[" "]
+    v27[" "]
+    v28[" "]
+    v33[" "]
+    v37[" "]
+    v38[" "]
+    v39[" "]
+    v43[" "]
+    v44[" "]
+    v45[" "]
+    v46[" "]
+    v49[" "]
+    v50[" "]
+    v51[" "]
+    v55[" "]
+    v56[" "]
+    v57[" "]
+    v58[" "]
+    v61[" "]
+    v62[" "]
+    v63[" "]
+    v65[" "]
+    v68[" "]
+    v74[" "]
+    v75[" "]
+    v80[" "]
+    v86[" "]
+    v87[" "]
+    v88[" "]
+    v114[" "]
+    v115[" "]
+    v116[" "]
+    v120[" "]
+    end
+    subgraph "NFCORE_PROJECTRNASEQ [NFCORE_PROJECTRNASEQ]"
+    subgraph "NFCORE_PROJECTRNASEQ:PROJECTRNASEQ [PROJECTRNASEQ]"
+    v10(["CAT_FASTQ"])
+    v17(["FASTP"])
+    v26(["HISAT2_EXTRACTSPLICESITES"])
+    v32(["HISAT2_BUILD"])
+    v36(["HISAT2_ALIGN"])
+    v42(["SAMTOOLS_SORT_NAME"])
+    v48(["SAMTOOLS_FIXMATE"])
+    v54(["SAMTOOLS_SORT_COORD"])
+    v60(["SAMTOOLS_MARKDUP"])
+    v64(["SAMTOOLS_INDEX"])
+    v67(["SAMTOOLS_FLAGSTAT"])
+    v73(["FASTQC"])
+    v79(["SUBREAD_FEATURECOUNTS"])
+    v85(["FEATURECOUNTS_TPM"])
+    v113(["MULTIQC"])
+    v9(( ))
+    v23(( ))
+    v29(( ))
+    v34(( ))
+    v66(( ))
+    v83(( ))
+    v117(( ))
+    end
+    end
+    subgraph "PIPELINE_INITIALISATION [PIPELINE_INITIALISATION]"
+    v3(( ))
+    end
+    subgraph "PIPELINE_COMPLETION [PIPELINE_COMPLETION]"
+    v119(( ))
+    end
+    v0 --> v1
+    v2 --> v3
+    v7 --> v23
+    v8 --> v23
+    v9 --> v10
+    v10 --> v11
+    v10 --> v9
+    v14 --> v17
+    v15 --> v17
+    v16 --> v17
+    v9 --> v17
+    v17 --> v36
+    v17 --> v22
+    v17 --> v21
+    v17 --> v20
+    v17 --> v19
+    v17 --> v18
+    v17 --> v23
+    v25 --> v26
+    v26 --> v28
+    v26 --> v27
+    v26 --> v29
+    v31 --> v32
+    v29 --> v32
+    v32 --> v33
+    v32 --> v34
+    v35 --> v36
+    v29 --> v36
+    v34 --> v36
+    v36 --> v42
+    v36 --> v39
+    v36 --> v38
+    v36 --> v37
+    v36 --> v23
+    v40 --> v42
+    v41 --> v42
+    v42 --> v48
+    v42 --> v46
+    v42 --> v45
+    v42 --> v44
+    v42 --> v43
+    v47 --> v48
+    v48 --> v54
+    v48 --> v51
+    v48 --> v50
+    v48 --> v49
+    v52 --> v54
+    v53 --> v54
+    v54 --> v60
+    v54 --> v58
+    v54 --> v57
+    v54 --> v56
+    v54 --> v55
+    v59 --> v60
+    v60 --> v64
+    v60 --> v63
+    v60 --> v62
+    v60 --> v61
+    v60 --> v66
+    v64 --> v65
+    v64 --> v66
+    v66 --> v67
+    v67 --> v68
+    v67 --> v23
+    v9 --> v73
+    v73 --> v75
+    v73 --> v74
+    v73 --> v23
+    v66 --> v79
+    v79 --> v80
+    v79 --> v23
+    v79 --> v83
+    v83 --> v85
+    v85 --> v88
+    v85 --> v87
+    v85 --> v86
+    v89 --> v23
+    v99 --> v23
+    v104 --> v23
+    v107 --> v23
+    v23 --> v113
+    v113 --> v116
+    v113 --> v115
+    v113 --> v114
+    v113 --> v117
+    v119 --> v120
+    v3 --> v9
+    v117 --> v119
+
+</pre>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, maxTextSize: Number.MAX_SAFE_INTEGER, maxEdges: Number.MAX_SAFE_INTEGER });
+</script>
+</body>
+</html>

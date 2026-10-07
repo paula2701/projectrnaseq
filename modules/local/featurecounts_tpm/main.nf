@@ -1,8 +1,8 @@
 process FEATURECOUNTS_TPM {
     label 'process_single'
 
-    conda "conda-forge::python=3.12"
-    container "docker.io/library/python:3.12-slim"
+    conda "conda-forge::python=3.9"
+    container "biocontainers/python:3.9--1"
 
     input:
     path counts // all per-sample *.featureCounts.tsv files

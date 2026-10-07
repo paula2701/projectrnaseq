@@ -4,6 +4,8 @@ FASTP:
   fastp: 1.3.6
 FASTQC:
   fastqc: 0.12.1
+FEATURECOUNTS_TPM:
+  python: 3.9.5
 HISAT2_ALIGN:
   hisat2: 2.2.3
   samtools: 1.24
@@ -24,6 +26,8 @@ SAMTOOLS_SORT_COORD:
   samtools: 1.24
 SAMTOOLS_SORT_NAME:
   samtools: 1.24
+SUBREAD_FEATURECOUNTS:
+  subread: 2.1.1
 Workflow:
     nf-core/projectrnaseq: v1.0.0dev
     Nextflow: 26.04.6
