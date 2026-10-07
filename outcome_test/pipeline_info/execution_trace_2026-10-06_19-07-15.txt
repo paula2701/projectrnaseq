@@ -1,0 +1,2 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+8	e4/5ab557	-	NFCORE_PROJECTRNASEQ:PROJECTRNASEQ:FASTP (RAP1_UNINDUCED_REP1)	FAILED	-	-	-	-	-	-	-	-	-

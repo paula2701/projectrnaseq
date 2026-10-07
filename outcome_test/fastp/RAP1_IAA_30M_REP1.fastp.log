@@ -1,0 +1,54 @@
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 50000
+total bases: 5050000
+Q20 bases: 4832421(95.6915%)
+Q30 bases: 4630577(91.6946%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 50000
+total bases: 5050000
+Q20 bases: 4787027(94.7926%)
+Q30 bases: 4579072(90.6747%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 47905
+total bases: 4779908
+Q20 bases: 4643377(97.1436%)
+Q30 bases: 4488617(93.9059%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 47905
+total bases: 4779471
+Q20 bases: 4628362(96.8384%)
+Q30 bases: 4470730(93.5403%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 95810
+reads failed due to low quality: 3880
+reads failed due to too many N: 98
+reads failed due to too short: 212
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 8381
+bases trimmed due to adapters: 112715
+
+Duplication rate: 7.12%
+
+Insert size peak (evaluated by paired-end reads): 131
+
+JSON report: RAP1_IAA_30M_REP1.fastp.json
+HTML report: RAP1_IAA_30M_REP1.fastp.html
+
+fastp --in1 RAP1_IAA_30M_REP1_R1.fastq.gz --in2 RAP1_IAA_30M_REP1_R2.fastq.gz --out1 RAP1_IAA_30M_REP1_R1.fastp.fastq.gz --out2 RAP1_IAA_30M_REP1_R2.fastp.fastq.gz --json RAP1_IAA_30M_REP1.fastp.json --html RAP1_IAA_30M_REP1.fastp.html --thread 4 --detect_adapter_for_pe --detect_adapter_for_pe --cut_tail --cut_mean_quality 20 --length_required 20 
+fastp v1.3.6, time used: 6 seconds

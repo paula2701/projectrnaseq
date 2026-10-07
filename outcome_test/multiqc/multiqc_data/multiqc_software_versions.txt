@@ -1,0 +1,10 @@
+Sample	cat	fastp	fastqc	hisat2	samtools	nf-core/projectrnaseq	Nextflow
+CAT_FASTQ	9.5						
+FastQC			0.12.1				
+HISAT2_ALIGN				2.2.3	1.24		
+HISAT2_BUILD				2.2.3			
+HISAT2_EXTRACTSPLICESITES				2.2.3	1.24		
+SAMTOOLS_FLAGSTAT					1.24		
+SAMTOOLS_SORT					1.24		
+Workflow						v1.0.0dev	26.04.6
+fastp		1.3.6					
