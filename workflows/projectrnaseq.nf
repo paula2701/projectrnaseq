@@ -88,10 +88,20 @@ workflow PROJECTRNASEQ {
     HISAT2_ALIGN(ch_trimmed_reads, ch_hisat2_index, ch_splicesites, false)
 
     //
-    // MODULE: Sort + index BAM (needed for duplicate marking), mapping stats
+    // MODULE: Mark duplicates
+    //  name sort -> fixmate -m -> coordinate sort -> markdup -> index
     //
-    SAMTOOLS_SORT(HISAT2_ALIGN.out.bam, [[:] , [], []], 'bai')
-    def ch_bam_bai = SAMTOOLS_SORT.out.bam.join(SAMTOOLS_SORT.out.index) //input for step 4: mark duplicates
+    SAMTOOLS_SORT_NAME(HISAT2_ALIGN.out.bam, [[:], [], []], '')         // '' = no index (name-sorted BAM can't be indexed)
+    SAMTOOLS_FIXMATE(SAMTOOLS_SORT_NAME.out.bam, [[:], [], []])         // adds ms/MC tags needed by markdup
+    SAMTOOLS_SORT_COORD(SAMTOOLS_FIXMATE.out.bam, [[:], [], []], '')    // index only the final BAM
+    SAMTOOLS_MARKDUP(SAMTOOLS_SORT_COORD.out.bam, [[:], [], []])
+    SAMTOOLS_INDEX(SAMTOOLS_MARKDUP.out.bam)
+
+    def ch_bam_bai = SAMTOOLS_MARKDUP.out.bam.join(SAMTOOLS_INDEX.out.index) // input for next step: quantification
+
+    //
+    // MODULE: Mapping stats (now includes duplicate counts)
+    //
     SAMTOOLS_FLAGSTAT(ch_bam_bai)
 
     ch_multiqc_files = ch_multiqc_files
