@@ -26,6 +26,13 @@ include { EAUTILS_GTF2BED        } from '../modules/nf-core/ea-utils/gtf2bed/mai
 include { RSEQC_INFEREXPERIMENT  } from '../modules/nf-core/rseqc/inferexperiment/main'
 include { getInferExperimentStrandedness } from '../subworkflows/local/utils_nfcore_projectrnaseq_pipeline'
 
+// added for salmon
+include { GFFREAD                } from '../modules/nf-core/gffread/main'
+include { SALMON_INDEX           } from '../modules/nf-core/salmon/index/main'
+include { SALMON_QUANT           } from '../modules/nf-core/salmon/quant/main'
+include { SALMON_MERGE           } from '../modules/local/salmon_merge/main'
+include { CUSTOM_GTFFILTER       } from '../modules/nf-core/custom/gtffilter/main'
+
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     RUN MAIN WORKFLOW
@@ -179,26 +186,95 @@ workflow PROJECTRNASEQ {
             seed: "sample\tdeclared\tinferred\tused\n"
         )
 
+
+
+    //////////////////////////////// commented the below code out, for salmon
     //
     // MODULE: count reads per gene (featureCounts) with the checked strandedness
     //
-    SUBREAD_FEATURECOUNTS(
-        ch_bam_strand.map { meta, bam -> [ meta, bam, file(gtf, checkIfExists:true) ] }
-    )
+    //SUBREAD_FEATURECOUNTS(
+    //    ch_bam_strand.map { meta, bam -> [ meta, bam, file(gtf, checkIfExists:true) ] }
+    //)
 
-    ////////////////////////////////////test ends here
+
 
 
     
-    
-    ch_multiqc_files = ch_multiqc_files.mix(SUBREAD_FEATURECOUNTS.out.summary.map { _meta, f -> f })
+    //ch_multiqc_files = ch_multiqc_files.mix(SUBREAD_FEATURECOUNTS.out.summary.map { _meta, f -> f })
 
     //
     // MODULE: merge all samples into gene * sample count + TPM tables
     //
-    FEATURECOUNTS_TPM(
-        SUBREAD_FEATURECOUNTS.out.counts.map { _meta, f -> f }.collect() // wait for all samples, pass as one list
-    )
+    //FEATURECOUNTS_TPM(
+    //    SUBREAD_FEATURECOUNTS.out.counts.map { _meta, f -> f }.collect() // wait for all samples, pass as one list
+    //)
+
+
+
+///////////////////////////////////added temporarily for salmon/start
+
+
+ if (params.quantifier == 'featurecounts') {
+        //
+        // MODULE: count reads per gene (featureCounts) with the checked strandedness
+        //
+        SUBREAD_FEATURECOUNTS(
+            ch_bam_strand.map { meta, bam -> [ meta, bam, file(gtf, checkIfExists:true) ] }
+        )
+        ch_multiqc_files = ch_multiqc_files.mix(SUBREAD_FEATURECOUNTS.out.summary.map { _meta, f -> f })
+
+        //
+        // MODULE: merge all samples into gene * sample count + TPM tables
+        //
+        FEATURECOUNTS_TPM(
+            SUBREAD_FEATURECOUNTS.out.counts.map { _meta, f -> f }.collect() // wait for all samples, pass as one list
+        )
+    } else if (params.quantifier == 'salmon') {
+        //
+        // MODULE: keep only GTF lines whose chromosome exists in the genome fasta
+        //         (the test GTF contains a 'not_in_genome' line that gffread cannot handle)
+        //
+        CUSTOM_GTFFILTER(ch_gtf, [ [id:'genome'], file(fasta, checkIfExists:true) ])
+        def ch_gtf_filtered = CUSTOM_GTFFILTER.out.gtf.map { _meta, f -> f }
+
+        //
+        // MODULE: extract transcript sequences from genome fasta + filtered GTF
+        //
+        GFFREAD(CUSTOM_GTFFILTER.out.gtf, file(fasta, checkIfExists:true))
+        def ch_transcript_fasta = GFFREAD.out.gffread_fasta.map { _meta, fa -> fa }
+
+        //
+        // MODULE: build a decoy-aware Salmon index (transcripts + genome as decoy), built once
+        //
+        SALMON_INDEX(
+            ch_transcript_fasta.map { fa -> [ [id:'genome'], fa, file(fasta, checkIfExists:true) ] }
+        )
+
+        //
+        // MODULE: quantify the trimmed reads against the transcriptome
+        //
+        def ch_salmon_ref = SALMON_INDEX.out.index
+            .combine(ch_transcript_fasta)
+            .combine(ch_gtf_filtered)
+            .map { meta, index, fa, gtf_filtered -> [ meta, index, gtf_filtered, fa ] }
+            .first()
+        SALMON_QUANT(ch_trimmed_reads, ch_salmon_ref)
+        ch_multiqc_files = ch_multiqc_files.mix(SALMON_QUANT.out.results.map { _meta, dir -> dir })
+
+        //
+        // MODULE: merge all samples into gene * sample count + TPM tables
+        //
+        SALMON_MERGE(
+            SALMON_QUANT.out.results.map { _meta, dir -> dir }.collect() // wait for all samples, pass as one list
+        )
+    }
+
+
+
+///////////////////////////////////added temporarily for salmon/end
+
+
+
 
     //
     // Collate and save software versions

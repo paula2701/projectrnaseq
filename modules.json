@@ -10,6 +10,11 @@
                         "git_sha": "6d46786420b4d7bc88eba026eb389c0c5535d120",
                         "installed_by": ["modules"]
                     },
+                    "custom/gtffilter": {
+                        "branch": "master",
+                        "git_sha": "d95d53e0355903a16d2d7c2d54134591c5aa4467",
+                        "installed_by": ["modules"]
+                    },
                     "ea-utils/gtf2bed": {
                         "branch": "master",
                         "git_sha": "1298fbd2004c2913d6682ce4a419647d97a8fc3f",
@@ -23,6 +28,11 @@
                     "fastqc": {
                         "branch": "master",
                         "git_sha": "6d46786420b4d7bc88eba026eb389c0c5535d120",
+                        "installed_by": ["modules"]
+                    },
+                    "gffread": {
+                        "branch": "master",
+                        "git_sha": "b3d1ca84b3f0051498abb91bd4333b701be4384d",
                         "installed_by": ["modules"]
                     },
                     "hisat2/align": {
@@ -48,6 +58,16 @@
                     "rseqc/inferexperiment": {
                         "branch": "master",
                         "git_sha": "6d46786420b4d7bc88eba026eb389c0c5535d120",
+                        "installed_by": ["modules"]
+                    },
+                    "salmon/index": {
+                        "branch": "master",
+                        "git_sha": "53daf6285b9fbf1164b4dcab41da6e70e1f2f721",
+                        "installed_by": ["modules"]
+                    },
+                    "salmon/quant": {
+                        "branch": "master",
+                        "git_sha": "225ce36098d83f8c355c4bb8684f8205350c288e",
                         "installed_by": ["modules"]
                     },
                     "samtools/fixmate": {
