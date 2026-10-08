@@ -1,0 +1,21 @@
+Sample	cat	python	perl	fastp	fastqc	gffread	hisat2	samtools	rseqc	salmon	nf-core/projectrnaseq	Nextflow
+CAT_FASTQ	9.5											
+CUSTOM_GTFFILTER		3.14.5										
+EAUTILS_GTF2BED			5.26.2									
+FastQC					0.12.1							
+GFFREAD						0.12.7						
+HISAT2_ALIGN							2.2.3	1.24				
+HISAT2_BUILD							2.2.3					
+HISAT2_EXTRACTSPLICESITES							2.2.3	1.24				
+RSEQC_INFEREXPERIMENT									5.0.4			
+SALMON_INDEX										2.7.0		
+SALMON_MERGE		3.9.5										
+SALMON_QUANT										2.7.0		
+SAMTOOLS_FIXMATE								1.24				
+SAMTOOLS_FLAGSTAT								1.24				
+SAMTOOLS_INDEX								1.24				
+SAMTOOLS_MARKDUP								1.24				
+SAMTOOLS_SORT_COORD								1.24				
+SAMTOOLS_SORT_NAME								1.24				
+Workflow											v1.0.0dev	26.04.6
+fastp				1.3.6								

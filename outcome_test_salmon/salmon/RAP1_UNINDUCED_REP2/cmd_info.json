@@ -1,0 +1,13 @@
+{
+  "salmon_version": "2.7.0",
+  "index": "salmon",
+  "libType": "A",
+  "output": "RAP1_UNINDUCED_REP2",
+  "mates1": [],
+  "mates2": [],
+  "unmatedReads": [
+    "RAP1_UNINDUCED_REP2.fastp.fastq.gz"
+  ],
+  "threads": 4,
+  "sketch": false
+}
