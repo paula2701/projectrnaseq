@@ -1,0 +1,34 @@
+Module	Section	Sample Name	Source
+RSeQC	infer_experiment	RAP1_IAA_30M_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/31/RAP1_IAA_30M_REP1.infer_experiment.txt
+RSeQC	infer_experiment	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/29/RAP1_UNINDUCED_REP1.infer_experiment.txt
+RSeQC	infer_experiment	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/32/RAP1_UNINDUCED_REP2.infer_experiment.txt
+RSeQC	infer_experiment	WT_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/35/WT_REP1.infer_experiment.txt
+RSeQC	infer_experiment	WT_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/33/WT_REP2.infer_experiment.txt
+Samtools	flagstat	RAP1_IAA_30M_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/27/RAP1_IAA_30M_REP1.flagstat
+Samtools	flagstat	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/26/RAP1_UNINDUCED_REP1.flagstat
+Samtools	flagstat	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/30/RAP1_UNINDUCED_REP2.flagstat
+Samtools	flagstat	WT_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/34/WT_REP1.flagstat
+Samtools	flagstat	WT_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/28/WT_REP2.flagstat
+Salmon	all_sections	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/20/RAP1_UNINDUCED_REP2/libParams/flenDist.txt
+Salmon	all_sections	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/19/RAP1_UNINDUCED_REP1/libParams/flenDist.txt
+Salmon	all_sections	RAP1_IAA_30M_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/21/RAP1_IAA_30M_REP1/libParams/flenDist.txt
+Salmon	all_sections	WT_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/24/WT_REP1/libParams/flenDist.txt
+Salmon	all_sections	WT_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/23/WT_REP2/libParams/flenDist.txt
+Bowtie 2 / HiSAT2	all_sections	RAP1_IAA_30M_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/16/RAP1_IAA_30M_REP1.hisat2.summary.log
+Bowtie 2 / HiSAT2	all_sections	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/15/RAP1_UNINDUCED_REP1.hisat2.summary.log
+Bowtie 2 / HiSAT2	all_sections	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/22/RAP1_UNINDUCED_REP2.hisat2.summary.log
+Bowtie 2 / HiSAT2	all_sections	WT_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/25/WT_REP1.hisat2.summary.log
+Bowtie 2 / HiSAT2	all_sections	WT_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/18/WT_REP2.hisat2.summary.log
+fastp	all_sections	RAP1_IAA_30M_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/10/RAP1_IAA_30M_REP1.fastp.json
+fastp	all_sections	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/3/RAP1_UNINDUCED_REP1.fastp.json
+fastp	all_sections	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/11/RAP1_UNINDUCED_REP2.fastp.json
+fastp	all_sections	WT_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/17/WT_REP1.fastp.json
+fastp	all_sections	WT_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/7/WT_REP2.fastp.json
+FastQC	all_sections	RAP1_IAA_30M_REP1_1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/8/RAP1_IAA_30M_REP1_1_fastqc.zip
+FastQC	all_sections	RAP1_IAA_30M_REP1_2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/9/RAP1_IAA_30M_REP1_2_fastqc.zip
+FastQC	all_sections	RAP1_UNINDUCED_REP1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/4/RAP1_UNINDUCED_REP1_fastqc.zip
+FastQC	all_sections	RAP1_UNINDUCED_REP2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/12/RAP1_UNINDUCED_REP2_fastqc.zip
+FastQC	all_sections	WT_REP1_1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/13/WT_REP1_1_fastqc.zip
+FastQC	all_sections	WT_REP1_2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/14/WT_REP1_2_fastqc.zip
+FastQC	all_sections	WT_REP2_1	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/5/WT_REP2_1_fastqc.zip
+FastQC	all_sections	WT_REP2_2	/Users/ivan/Desktop/CompWorkflow/projectrnaseq/work/46/d3382bd619b4ca60f6582de0eb0dae/6/WT_REP2_2_fastqc.zip

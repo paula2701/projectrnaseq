@@ -1,0 +1,6 @@
+Sample	total_reads	paired_total	paired_aligned_none	paired_aligned_one	paired_aligned_multi	overall_alignment_rate	paired_aligned_mate_none_halved	unpaired_total	unpaired_aligned_none	unpaired_aligned_one	unpaired_aligned_multi
+RAP1_IAA_30M_REP1	47905	47905	8823	38744	338	81.58	8823				
+RAP1_UNINDUCED_REP1	48957					85.97		48957	6871	41475	611
+RAP1_UNINDUCED_REP2	98143					86.03		98143	13706	83246	1191
+WT_REP1	95592	95592	19622	75227	743	79.47	19622				
+WT_REP2	48005	48005	9371	38246	388	80.48	9371				

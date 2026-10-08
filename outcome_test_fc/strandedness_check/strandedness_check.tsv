@@ -1,0 +1,6 @@
+sample	declared	inferred	used
+RAP1_UNINDUCED_REP1	reverse	reverse	reverse
+RAP1_UNINDUCED_REP2	reverse	reverse	reverse
+WT_REP2	reverse	reverse	reverse
+WT_REP1	auto	reverse	reverse
+RAP1_IAA_30M_REP1	reverse	reverse	reverse
