@@ -237,7 +237,7 @@ def getInferExperimentStrandedness(infer_file, stranded_threshold = 0.8, unstran
         def rev_frac = reverse / total
         if (fwd_frac >= stranded_threshold) {
             inferred = 'forward'
-        } else if (rev_frac >= stran_threshold) {
+        } else if (rev_frac >= stranded_threshold) {
             inferred = 'reverse'
         } else if (Math.abs(fwd_frac - rev_frac) < unstranded_threshold) {
             inferred = 'unstranded'
