@@ -22,6 +22,9 @@ include { softwareVersionsToYAML } from '../subworkflows/nf-core/utils_nfcore_pi
 include { methodsDescriptionText } from '../subworkflows/local/utils_nfcore_projectrnaseq_pipeline'
 include { SUBREAD_FEATURECOUNTS  } from '../modules/nf-core/subread/featurecounts/main'
 include { FEATURECOUNTS_TPM      } from '../modules/local/featurecounts_tpm/main'
+include { EAUTILS_GTF2BED        } from '../modules/nf-core/ea-utils/gtf2bed/main'
+include { RSEQC_INFEREXPERIMENT  } from '../modules/nf-core/rseqc/inferexperiment/main'
+include { getInferExperimentStrandedness } from '../subworkflows/local/utils_nfcore_projectrnaseq_pipeline'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,16 +119,78 @@ workflow PROJECTRNASEQ {
     FASTQC(ch_reads)
     ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.map{ _meta, file -> file})
 
+    // original strandedness handlement, commented out for comparison of a vallidation approach
     //
     // MODULE: count reads per gene (featureCounts) ono the duplicate-marked BAM
     //
-    SUBREAD_FEATURECOUNTS(
-        ch_bam_bai.map { meta, bam, _bai ->
-            // change auto to reversed, for the FeaturCount to work 
-            def strand = meta.strandedness == 'auto' ? 'reverse' : meta.strandedness
-            [ meta + [strandedness: strand], bam, file(gtf, checkIfExists:true) ]
+    //SUBREAD_FEATURECOUNTS(
+    //    ch_bam_bai.map { meta, bam, _bai ->
+    //        // change auto to reversed, for the FeaturCount to work 
+    //        def strand = meta.strandedness == 'auto' ? 'reverse' : meta.strandedness
+    //        [ meta + [strandedness: strand], bam, file(gtf, checkIfExists:true) ]
+     //   }
+    //)
+
+
+    ////////////////////////////////////test statrts here
+    //
+    // MODULE: convert the GTF into a BED12 gene model (needed by RSeQC), built once
+    //
+    EAUTILS_GTF2BED(ch_gtf)
+    def ch_bed = EAUTILS_GTF2BED.out.bed.map { _meta, bed -> bed }.first()
+
+    //
+    // MODULE: infer library strandedness from the aligned reads (RSeQC infer_experiment.py)
+    //
+    RSEQC_INFEREXPERIMENT(ch_bam_bai, ch_bed)
+    ch_multiqc_files = ch_multiqc_files.mix(RSEQC_INFEREXPERIMENT.out.txt.map { _meta, f -> f })
+
+    //
+    // Decide which strandedness featureCounts should use
+    //
+    def ch_bam_strand = ch_bam_bai
+        .join(RSEQC_INFEREXPERIMENT.out.txt) // [ meta, bam, bai, infer_experiment.txt ]
+        .map { meta, bam, _bai, infer_txt ->
+            def declared = meta.strandedness
+            def strand   = getInferExperimentStrandedness(infer_txt)
+            def used     = declared
+            if (declared == 'auto') {
+                if (strand.inferred == 'undetermined') {
+                    used = 'reverse'
+                    log.warn "[${meta.id}] strandedness could not be inferred (forward=${strand.forward}, reverse=${strand.reverse}); falling back to 'reverse'"
+                } else {
+                    used = strand.inferred
+                    log.info "[${meta.id}] strandedness 'auto' -> inferred '${used}' (forward=${strand.forward}, reverse=${strand.reverse})"
+                }
+            } else if (strand.inferred != 'undetermined' && strand.inferred != declared) {
+                log.warn "[${meta.id}] MISMATCH: samplesheet says '${declared}' but RSeQC infers '${strand.inferred}' (forward=${strand.forward}, reverse=${strand.reverse}); keeping '${declared}'"
+            }
+            [ meta + [strandedness: used, strandedness_declared: declared, strandedness_inferred: strand.inferred], bam ]
         }
+
+    //
+    // Save a small table: declared vs inferred vs used strandedness per sample
+    //
+    ch_bam_strand
+        .map { meta, _bam -> "${meta.id}\t${meta.strandedness_declared}\t${meta.strandedness_inferred}\t${meta.strandedness}\n" }
+        .collectFile(
+            name: 'strandedness_check.tsv',
+            storeDir: "${outdir}/strandedness_check",
+            seed: "sample\tdeclared\tinferred\tused\n"
+        )
+
+    //
+    // MODULE: count reads per gene (featureCounts) with the checked strandedness
+    //
+    SUBREAD_FEATURECOUNTS(
+        ch_bam_strand.map { meta, bam -> [ meta, bam, file(gtf, checkIfExists:true) ] }
     )
+
+    ////////////////////////////////////test ends here
+
+
+    
+    
     ch_multiqc_files = ch_multiqc_files.mix(SUBREAD_FEATURECOUNTS.out.summary.map { _meta, f -> f })
 
     //

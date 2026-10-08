@@ -1,0 +1,54 @@
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Read1 before filtering:
+total reads: 50000
+total bases: 5050000
+Q20 bases: 4877337(96.5809%)
+Q30 bases: 4712814(93.323%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 50000
+total bases: 5050000
+Q20 bases: 4810072(95.249%)
+Q30 bases: 4626752(91.6189%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 48005
+total bases: 4781986
+Q20 bases: 4675472(97.7726%)
+Q30 bases: 4550348(95.156%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 48005
+total bases: 4781185
+Q20 bases: 4647514(97.2042%)
+Q30 bases: 4508505(94.2968%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 96010
+reads failed due to low quality: 3594
+reads failed due to too many N: 152
+reads failed due to too short: 244
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 9827
+bases trimmed due to adapters: 131402
+
+Duplication rate: 7.41%
+
+Insert size peak (evaluated by paired-end reads): 128
+
+JSON report: WT_REP2.fastp.json
+HTML report: WT_REP2.fastp.html
+
+fastp --in1 WT_REP2_R1.fastq.gz --in2 WT_REP2_R2.fastq.gz --out1 WT_REP2_R1.fastp.fastq.gz --out2 WT_REP2_R2.fastp.fastq.gz --json WT_REP2.fastp.json --html WT_REP2.fastp.html --thread 4 --detect_adapter_for_pe --detect_adapter_for_pe --cut_tail --cut_mean_quality 20 --length_required 20 
+fastp v1.3.6, time used: 9 seconds

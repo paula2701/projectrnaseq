@@ -217,6 +217,36 @@ def getGenomeAttribute(attribute) {
 }
 
 //
+// Infer library strandedness from an RSeQC infer_experiment.py report
+//
+def getInferExperimentStrandedness(infer_file, stranded_threshold = 0.8, unstranded_threshold = 0.1) {
+    def forward = 0.0
+    def reverse = 0.0
+    infer_file.eachLine { line ->
+        if (line.contains('explained by')) {
+            def key   = line.tokenize('"')[1]                     // e.g. 1+-,1-+,2++,2--
+            def value = line.tokenize(':')[-1].trim().toDouble()  // e.g. 0.9687
+            if (key in ['1++,1--,2+-,2-+', '++,--']) { forward = value }
+            if (key in ['1+-,1-+,2++,2--', '+-,-+']) { reverse = value }
+        }
+    }
+    def inferred = 'undetermined'
+    def total    = forward + reverse
+    if (total > 0) {
+        def fwd_frac = forward / total
+        def rev_frac = reverse / total
+        if (fwd_frac >= stranded_threshold) {
+            inferred = 'forward'
+        } else if (rev_frac >= stran_threshold) {
+            inferred = 'reverse'
+        } else if (Math.abs(fwd_frac - rev_frac) < unstranded_threshold) {
+            inferred = 'unstranded'
+        }
+    }
+    return [inferred: inferred, forward: forward, reverse: reverse]
+}
+
+//
 // Exit pipeline if incorrect --genome key provided
 //
 def genomeExistsError() {

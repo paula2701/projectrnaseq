@@ -1,0 +1,6 @@
+Sample	Total	Assigned	Unassigned_Unmapped	Unassigned_Read_Type	Unassigned_Singleton	Unassigned_MappingQuality	Unassigned_Chimera	Unassigned_FragmentLength	Unassigned_Duplicate	Unassigned_MultiMapping	Unassigned_Secondary	Unassigned_NonSplit	Unassigned_NoFeatures	Unassigned_Overlapping_Length	Unassigned_Ambiguity	percent_assigned
+RAP1_IAA_30M_REP1	39082	36772	0	0	0	0	0	0	0	338	0	0	1951	0	21	94.08935059618238
+RAP1_UNINDUCED_REP1	42086	38418	0	0	0	0	0	0	0	611	0	0	3021	0	36	91.28451266454402
+RAP1_UNINDUCED_REP2	84437	76960	0	0	0	0	0	0	0	1191	0	0	6213	0	73	91.1448772457572
+WT_REP1	75970	70639	0	0	0	0	0	0	0	743	0	0	4537	0	51	92.98275635119127
+WT_REP2	38634	36004	0	0	0	0	0	0	0	388	0	0	2214	0	28	93.19252471915928

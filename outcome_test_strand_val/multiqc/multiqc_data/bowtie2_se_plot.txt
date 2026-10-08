@@ -1,0 +1,3 @@
+Sample	SE mapped uniquely	SE multimapped	SE not aligned
+RAP1_UNINDUCED_REP1	41475.0	611.0	6871.0
+RAP1_UNINDUCED_REP2	83246.0	1191.0	13706.0
