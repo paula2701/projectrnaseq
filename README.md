@@ -21,18 +21,26 @@
 
 ## Introduction
 
-**nf-core/projectrnaseq** is a bioinformatics pipeline that developed for RNA-seq data analysis. The project was created for the Computational Workflows for Biomedical Data course at the University of Tübingen using a nf-core template. The workflow processes sequencing reads through the main steps of RNA-seq analysis and generates gene-count and TPM matrices as final expression outputs. 
+**nf-core/projectrnaseq** is a bioinformatics pipeline developed for RNA-seq data analysis. The project was created for the Computational Workflows for Biomedical Data course at the University of Tübingen using an nf-core template. The workflow processes sequencing reads through the main steps of RNA-seq analysis and generates gene-count and TPM matrices as final expression outputs. 
 
 <!-- TODO nf-core:
    Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
    major pipeline sections and the types of output it produces. You're giving an overview to someone new
    to nf-core here, in 15-20 seconds. For an example, see https://github.com/nf-core/rnaseq/blob/master/README.md#introduction
 -->
-![Overview of the pipeline followed in this project](/home/paula/.ssh/computational-workflows-2026/nf-core-projectrnaseq/workflow_projectrnaseq.png)
+![Overview of the pipeline followed in this project](workflow_projectrnaseq.png)
 <!-- TODO nf-core: Include a figure that guides the user through the major workflow steps. Many nf-core
      workflows use the "tube map" design for that. See https://nf-co.re/docs/community/brand/workflow-schematics#examples for examples.   -->
 
-<!-- TODO nf-core: Fill in short bullet-pointed list of the default steps in the pipeline -->1. Read QC ([`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))2. Present QC for raw reads ([`MultiQC`](http://multiqc.info/))
+<!-- TODO nf-core: Fill in short bullet-pointed list of the default steps in the pipeline -->
+1. Read Quality Control ([`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)) 
+2. Adapter and quality trimming ([`fastp`](https://nf-co.re/modules/fastp/))
+3. Genome alignment ([`HISAT2`](https://daehwankimlab.github.io/hisat2/))
+4. BAM processing and duplicate marking ([`SAMtools`](https://www.htslib.org/))
+5. Validation strandedness ([`RSeQC`](https://www.htslib.org/))
+6. Compute gene counts and building the TPM (transcripts per million) matrix ([`featureCounts`](https://subread.sourceforge.net/featureCounts.html))
+7. Alternative method to compute the TPM matrix ([`Salmon`](https://salmon.readthedocs.io/en/latest/salmon.html))
+8. Present QC for raw reads ([`MultiQC`](http://multiqc.info/))
 
 ## Usage
 
