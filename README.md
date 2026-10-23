@@ -88,10 +88,11 @@ Now, you can run the pipeline using:
 <!-- TODO nf-core: update the following command to include all required parameters for a minimal example -->
 
 ```bash
-nextflow run nf-core/projectrnaseq \
+nextflow run paula2701/projectrnaseq \
+   -r dev \
    -profile <docker/singularity/.../institute> \
    --input <SAMPLESHEET> \
-   --outdir <OUTDIR>
+   --outdir <OUTDIR> \
    --quantifier <featurecounts/salmon> \
    --fasta <REFERENCE_FASTA> \
    --gtf <ANNOTATION_GTF>
@@ -102,6 +103,43 @@ Reference files can also be provided through a configuration file or by using a 
 > Please provide pipeline parameters via the CLI or Nextflow `-params-file` option. Custom config files including those provided by the `-c` Nextflow option can be used to provide any configuration _**except for parameters**_; see [docs](https://nf-co.re/docs/running/run-pipelines#using-parameter-files).
 
 For more details and further functionality, please refer to the [usage documentation](https://nf-co.re/projectrnaseq/usage) and the [parameter documentation](https://nf-co.re/projectrnaseq/parameters).
+
+## Test runs
+
+The designed pipeline includes two test profiles based on a small RNA-seq dataset from nf-core/rnaseq test dataset. They can be used to check that the workflow runs correctly, to test both quantification approaches, and to understand the outcome files.
+
+Nextflow and Docker must be installed, and Docker must be running, so the pipeline can work correctly. Internet access is also required to download the test data and containers used by Docker.
+
+### featureCounts branch
+
+```bash
+nextflow run paula2701/projectrnaseq \
+  -r dev \
+  -profile test,docker \
+  --outdir results_test_featurecounts 
+```
+
+This profile uses project_data/samplesheet_test_remote.csv and automatically provides the reference FASTA and GTF files. The final merged matrices are written to:
+
+* results_test_featurecounts/tpm/gene_counts.tsv
+* results_test_featurecounts/tpm/gene_tpm.tsv
+
+### Salmon branch
+
+```bash
+nextflow run paula2701/projectrnaseq \
+  -r dev \
+  -profile test_salmon,docker \
+  --outdir results_test_salmon 
+```
+
+This profile uses the same test data as in the featureCounts test described above, but runs the Salmon quantification branch. The final merged matrices are written to:
+
+* results_test_salmon/tpm_salmon/gene_counts.tsv
+* results_test_salmon/tpm_salmon/gene_tpm.tsv
+
+Both test runs also generate quality-control reports, processed alignment files, strandedness results, and a final MultiQC report in <output_directory>/multiqc/multiqc_report.html.
+
 
 ## Pipeline output
 
