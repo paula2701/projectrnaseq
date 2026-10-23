@@ -26,6 +26,7 @@ def write_table(path, genes, samples, values, fmt):
         for g in genes:
             out.write(g + "\t" + "\t".join(fmt.format(values[s][g]) for s in samples) + "\n")
 
+
 def main(dirs):
     samples, data = [], {}
     for d in sorted(dirs):

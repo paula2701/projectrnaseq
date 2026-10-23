@@ -259,6 +259,13 @@
             "type": "string",
             "default": "200.GB"
         },
+        
+        "quantifier": {
+            "type": "string",
+            "default": "featurecounts",
+            "enum": ["featurecounts", "salmon"],
+            "description": "Tool used to build the gene x sample matrix."
+        },
         "gtf": {
             "type": "string"
         }
