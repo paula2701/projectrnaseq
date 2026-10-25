@@ -1,17 +1,11 @@
 #!/usr/bin/env python3
-"""
-Merge per-sample featureCounts tables into gene x sample tables:
-  gene_counts.tsv  raw read/fragment counts
-  gene_tpm.tsv     TPM = (count / length_kb) / sum(count / length_kb) * 1e6
-Usage: featurecounts_to_tpm.py <sample1.featureCounts.tsv> [<sample2...>]
-"""
+
 # 
 import os
 import sys
 
 
 def read_featurecounts(path):
-    """Return {gene: length} and {gene: count} from one featureCounts output file."""
     lengths, counts = {}, {}
     with open(path) as fh:
         for line in fh:
