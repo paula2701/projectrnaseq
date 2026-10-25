@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
+"""
+Merge per-sample Salmon gene-level results (quant.genes.sf) into gene x sample tables:
+  gene_counts.tsv  estimated reads/fragments per gene (Salmon NumReads, not whole numbers)
+  gene_tpm.tsv     TPM as computed by Salmon
+Usage: salmon_merge.py <sample1_dir> [<sample2_dir> ...]
+"""
 import os
 import sys
 
 
 def read_quant(path):
+    """Return {gene: (tpm, numreads)} from one quant.genes.sf file."""
     values = {}
     with open(path) as fh:
         next(fh)  # header: Name  Length  EffectiveLength  TPM  NumReads
