@@ -139,7 +139,10 @@ workflow PROJECTRNASEQ {
     //)
 
 
-    ////////////////////////////////////test statrts here
+    //
+    //      STRANDEDNESS VALIDATION
+    //
+
     //
     // MODULE: convert the GTF into a BED12 gene model (needed by RSeQC), built once
     //
@@ -210,11 +213,12 @@ workflow PROJECTRNASEQ {
     //)
 
 
+    //
+    //      QUANTIFICATION - TPM MATRIX
+    //
 
-///////////////////////////////////added temporarily for salmon/start
 
-
- if (params.quantifier == 'featurecounts') {
+    if (params.quantifier == 'featurecounts') {
         //
         // MODULE: count reads per gene (featureCounts) with the checked strandedness
         //
@@ -268,12 +272,6 @@ workflow PROJECTRNASEQ {
             SALMON_QUANT.out.results.map { _meta, dir -> dir }.collect() // wait for all samples, pass as one list
         )
     }
-
-
-
-///////////////////////////////////added temporarily for salmon/end
-
-
 
 
     //

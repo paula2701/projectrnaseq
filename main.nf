@@ -1,11 +1,11 @@
 #!/usr/bin/env nextflow
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    nf-core/projectrnaseq
+    paula2701/projectrnaseq
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Github : https://github.com/nf-core/projectrnaseq
-    Website: https://nf-co.re/projectrnaseq
-    Slack  : https://nfcore.slack.com/channels/projectrnaseq
+    Github : https://github.com/paula2701/projectrnaseq
+    Website: There is no website for this project
+    Slack  : There is no slack for this project
 ----------------------------------------------------------------------------------------
 */
 
